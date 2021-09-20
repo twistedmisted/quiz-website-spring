@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link th:href="@{/css/main.css}" rel="stylesheet" type="text/css">
+    <title>GmOwl</title>
+</head>
+
+<body>
+<div id="container">
+    <div id="header">
+        <h1>Gm<span class="off">Owl</span></h1>
+        <h2 th:text="#{motto}"></h2>
+    </div>
+    <div class="menu">
+        <a class="menuitem active" th:href="@{/app/home}">
+            <div th:text="#{home}"></div>
+        </a>
+        <a class="menuitem" href="/app/all-quizzes">
+            <div th:text="#{all-quizzes}"></div>
+        </a>
+        <a class="menuitem" href="/app/my-quizzes">
+            <div th:text="#{my-quizzes}"></div>
+        </a>
+        <a class="menuitem" href="/app/about">
+            <div th:text="#{about}"></div>
+        </a>
+        <div class="dropdown">
+            <img class="profile-icon" th:src="@{/images/profile.png}" alt="profile icon">
+            <div class="dropdown-content">
+                <a href="/admin/home" sec:authorize="hasAuthority('admin')" th:text="#{admin}"></a>
+                <a href="/app/profile" th:text="#{profile}"></a>
+                <form class="logout" th:action="@{/logout}" method="post">
+                    <input type="submit" th:value="#{log-out}">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <p class="container-title" th:text="#{new-quizzes}"></p>
+        <div class="flex-container">
+            <a th:each="quiz : ${quizzes}" th:href="@{/app/quiz/{id}(id=${quiz.getId()})}" class="container-element"
+               style="text-decoration: none">
+                <div>
+                    <p class="quiz-title" th:text="${quiz.getName()}"></p>
+                    <p class="quiz-difficulty" th:text="${quiz.getDifficulty()}"></p>
+                    <p class="quiz-time" th:text="${quiz.getTime()}"></p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <p class="container-title" th:text="#{my-quizzes}"></p>
+        <div class="flex-container">
+            <p class="zero" th:if="${userQuizzes.size() == 0}">You have not quizzes...</p>
+            <a th:each="quiz : ${userQuizzes}" th:href="@{/app/quiz/{id}(id=${quiz.getId()})}" class="container-element"
+               style="text-decoration: none">
+                <div>
+                    <p class="quiz-title" th:text="${quiz.getName()}"></p>
+                    <p class="quiz-difficulty" th:text="${quiz.getDifficulty()}"></p>
+                    <p class="quiz-time" th:text="${quiz.getTime()}"></p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="langs">
+        <a class="lang" th:href="@{${#httpServletRequest.requestURI}(lang='en')}">
+            <i>EN</i>
+        </a>
+        <a class="lang" th:href="@{${#httpServletRequest.requestURI}(lang='ua')}">
+            <i>UA</i>
+        </a>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <title th:text="${quiz.getName()}"></title>
+    <style>
+        * {
+            margin: 0 auto 0 auto;
+            text-align: left;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: block;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+            font: 12px Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            color: #061C37;
+            background-color: #21232e;
+        }
+
+        .container {
+            margin: 300px auto;
+            width: 500px;
+            height: 260px;
+            border: 2px solid black;
+            background-color: #3b3f50;
+        }
+
+        .quiz-name {
+            padding-top: 45px;
+            font-size: 40px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+        }
+
+        .quiz-properties {
+            padding-top: 15px;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .btns {
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn {
+            background-color: #f44336;
+            border: none;
+            border-radius: 12px;
+            color: white;
+            padding: 10px 26px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+        }
+
+        .result {
+            font-size: 20px;
+            color: white;
+            padding-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <p class="quiz-name" th:text="${quiz.getName()}"></p>
+    <p class="quiz-properties">
+        <span th:text="#{difficulty}"></span>: <span th:text="${quiz.getDifficulty()}"></span>
+        |
+        <span th:text="#{time}"></span>: <span th:text="${quiz.getTime()}"></span>
+        <span th:text="#{time-measure}"></span>
+    </p>
+    <p class="result" th:if="${score != null}">
+        <span th:text="#{your-score}">: </span> <span th:text="${score}"></span>%
+    </p>
+    <div class="btns">
+        <a href="/app/home" class="btn" th:text="#{back}"></a>
+        <a th:href="@{/app/quiz/{id}/question/{index}(id=${quiz.getId()}, index=1)}" class="btn" th:text="#{start}" th:if="${score == null}"></a>
+    </div>
+</div>
+</body>
+<footer>
+    <div class="langs">
+        <a class="lang" th:href="@{${#httpServletRequest.requestURI}(lang='en')}">
+            <i>EN</i>
+        </a>
+        <a class="lang" th:href="@{${#httpServletRequest.requestURI}(lang='ua')}">
+            <i>UA</i>
+        </a>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <title th:text="#{add-question}"></title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: inline-block;
+            margin: 0;
+        }
+
+        .add-question {
+            display: flex;
+            justify-content: center;
+            width: 500px;
+            height: 250px;
+        }
+
+        .btns {
+            display: flex;
+            justify-content: center;
+        }
+
+        .btn {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-left: 65px;
+        }
+
+        .element {
+            padding: 10px
+        }
+
+        .element input {
+            margin: 0 auto;
+        }
+        .langs {
+            display: flex;
+            justify-content: center;
+            width: 30px;
+            font-size: 20px;
+            padding: 5px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .lang {
+            padding: 5px;
+            text-decoration: none;
+            color: white;
+        }
+
+        footer {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <form name="add-question" th:action="@{/admin/quizzes/{id}/questions/add(id=${quizId})}" method="post" th:object="${question}">
+
+        <div class="element">
+            <label for="prompt" th:text="#{prompt}"></label>
+            <input type="text" name="prompt" id="prompt" th:field="*{prompt}">
+        </div>
+
+        <p th:text="#{enter-variants}"></p>
+
+        <div class="element">
+            <input type="checkbox" id="a" name="variants" value="a" th:field="*{answers[0]}">
+            <input type="text" name="answers" id="a-input" th:field="*{variants[0]}">
+        </div>
+
+        <div class="element">
+            <input type="checkbox" id="b" name="variants" value="b" th:field="*{answers[1]}">
+            <input type="text" name="answers" id="b-input" th:field="*{variants[1]}">
+        </div>
+
+        <div class="element">
+            <input type="checkbox" id="c" name="variants" value="c" th:field="*{answers[2]}">
+            <input type="text" name="answers" id="c-input" th:field="*{variants[2]}">
+        </div>
+
+        <div class="element">
+            <input type="checkbox" id="d" name="variants" value="d" th:field="*{answers[3]}">
+            <input type="text" name="answers" id="d-input" th:field="*{variants[3]}">
+        </div>
+
+        <button class="btn" type="submit" th:text="#{confirm}"></button>
+    </form>
+    <div class="btns">
+        <a class="btn" type="submit" th:href="@{/admin/quizzes/{id}/questions(id=${quizId})}" th:text="#{back}"></a>
+    </div>
+</div>
+<footer>
+    <div class="langs">
+        <a class="lang" th:href="@{${#httpServletRequest.requestURI}(lang='en')}">
+            <i>EN</i>
+        </a>
+        <a class="lang" th:href="@{${#httpServletRequest.requestURI}(lang='ua')}">
+            <i>UA</i>
+        </a>
+    </div>
+</footer>
+</body>
+</html>

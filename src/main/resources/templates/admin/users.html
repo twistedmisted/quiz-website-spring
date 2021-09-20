@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <title th:text="#{list-users}"></title>
+    <link rel="stylesheet" th:href="@{/css/admin.css}">
+</head>
+<body>
+<div class="users-list">
+    <p class="error" th:if="${param.error}" th:text="#{error.something-went-wrong}"></p>
+    <table class="iksweb">
+        <caption class="title-list" th:text="#{list-users}"></caption>
+        <tbody>
+        <tr>
+            <th id="login" th:text="#{login}">login</th>
+            <th id="email" th:text="#{email}">email</th>
+            <th id="access-level" th:text="#{access-level}">access-level</th>
+            <th id="start" th:text="#{start}">start</th>
+            <th id="actions" th:text="#{actions}" colspan="3">actions</th>
+        </tr>
+        <tr th:each="user : ${userPage.content}">
+            <td th:text="${user.getLogin()}">login</td>
+            <td th:text="${user.getEmail()}">email</td>
+            <td th:text="${user.getAccessLevel()}">accessLevel</td>
+            <td><a th:href="@{/admin/users/edit/{id}(id=${user.id})}">Edit</a></td>
+            <td>
+                <a th:if="${user.getAccessLevel() != 'banned'}"
+                   th:href="@{/admin/users/block/{id}(id=${user.getId()})}">Block</a>
+                <a th:unless="${user.getAccessLevel() != 'banned'}"
+                   th:href="@{/admin/users/unblock/{id}(id=${user.getId()})}">Unblock</a>
+            </td>
+            <td>
+                <a th:href="@{/admin/users/delete/{id}(id=${user.id})}">Delete</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="btns" th:with="currentPage=${userPage.number + 1}">
+        <a th:if="${currentPage > 1}" class="element btn"
+           th:href="@{/admin/users(page=${currentPage - 1})}" th:text="#{back}"></a>
+        <a th:unless="${currentPage > 1}" class="element btn disabled" th:text="#{back}"></a>
+        <p class="element" th:text="${currentPage}"></p>
+        <a th:if="${currentPage < userPage.totalPages}" class="element btn"
+           th:href="@{/admin/users(page=${currentPage + 1})}" th:text="#{next}"></a>
+        <a th:unless="${currentPage < userPage.totalPages}" class="element btn disabled" th:text="#{next}"></a>
+    </div>
+    <div class="btns">
+        <a class="btn" href="/admin/home" th:text="#{admin}"></a>
+    </div>
+</div>
+<footer>
+    <div class="langs">
+        <a class="lang" th:href="@{${#httpServletRequest.requestURI}(lang='en')}">
+            <i>EN</i>
+        </a>
+        <a class="lang" th:href="@{${#httpServletRequest.requestURI}(lang='ua')}">
+            <i>UA</i>
+        </a>
+    </div>
+</footer>
+</body>
+</html>

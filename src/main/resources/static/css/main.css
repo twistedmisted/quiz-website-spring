@@ -1,0 +1,233 @@
+* {
+    margin: 0 auto 0 auto;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font: 12px Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    background-color: #21232e;
+}
+
+#container {
+    display: block;
+    height: auto;
+    position: relative;
+    width: 960px;
+}
+
+#header {
+    height: 85px;
+    width: 960px;
+}
+
+#header h1 {
+    position: absolute;
+    text-align: left;
+    font-size: 43px;
+    color: #FFF;
+    left: 14px;
+    top: 18px;
+}
+
+#header h2 {
+    position: absolute;
+    text-align: right;
+    color: #A9D1FA;
+    left: 490px;
+    top: 38px;
+    width: 400px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    width: 960px;
+    height: 54px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin-left: auto;
+    width: 960px;
+}
+
+.menu li {
+    list-style: none;
+    padding: 0;
+    display: inline;
+}
+
+.menuitem {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menuitem a:hover {
+    color: #86AEF9;
+    background-image: url(app/images/linkbackground.jpg);
+    background-repeat: repeat-x;
+}
+
+.active {
+    color: #6c9fff;
+    fill: #6c9fff;
+    border-bottom: 2px solid #6c9fff;
+}
+
+.logout {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.logout input {
+    border: none;
+    padding: 0;
+}
+
+.profile-icon {
+    display: flex;
+    justify-content: right;
+    width: 30px;
+    height: 30px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.container {
+    width: 960px;
+    margin-top: 60px;
+    border: 2px solid black;
+}
+
+.container-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    margin: 20px;
+}
+
+.flex-header {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    color: white;
+}
+
+.header {
+    min-width: 0;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.sort {
+    font-size: 16px;
+    padding: 30px;
+}
+
+.select {
+    background: transparent;
+    color: white;
+    border: none;
+}
+
+.select option {
+    background-color: #21232e;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.container-element {
+    flex: 0 0 22%;
+    margin: 14px;
+    background-color: #3b3f50;
+}
+
+.quiz-title {
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+.quiz-difficulty {
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.quiz-time {
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+}
+
+.zero {
+    font-size: 40px;
+    color: gray;
+    font-style: italic;
+}
+
+.langs {
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    font-size: 20px;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.lang {
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    margin: 20px;
+}

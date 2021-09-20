@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{error.login.state}"></title>
+</head>
+<body>
+    <div>
+        <p th:text="#{error.login.state}"></p>
+        <form class="logout" th:action="@{/logout}" method="post">
+            <input type="submit" th:value="#{log-out}">
+        </form>
+    </div>
+</body>
+<footer>
+    <div class="langs">
+        <a class="lang" th:href="@{${#httpServletRequest.requestURI}(lang='en')}">
+            <i>EN</i>
+        </a>
+        <a class="lang" th:href="@{${#httpServletRequest.requestURI}(lang='ua')}">
+            <i>UA</i>
+        </a>
+    </div>
+</footer>
+</html>

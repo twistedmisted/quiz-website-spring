@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <title th:text="#{admin}"></title>
+    <link rel="stylesheet" th:href="@{/css/admin.css}">
+</head>
+<body>
+<div>
+    <div class="admin-menu">
+        <p class="error" th:if="${param.error}" th:text="#{error.something-went-wrong}"></p>
+        <p class="title" th:text="#{admin}"></p>
+        <a class="admin-menuitem" href="/admin/users">
+            <div th:text="#{list-users}"></div>
+        </a>
+        <a class="admin-menuitem" href="/admin/quizzes">
+            <div th:text="#{list-quizzes}"></div>
+        </a>
+        <a class="admin-menuitem" href="/app/home">
+            <div th:text="#{home}"></div>
+        </a>
+        <form class="logout-form" th:action="@{/logout}" method="post">
+            <input type="submit" th:value="#{log-out}">
+        </form>
+    </div>
+</div>
+<footer>
+    <div class="langs">
+        <a class="lang" th:href="@{${#httpServletRequest.requestURI}(lang='en')}">
+            <i>EN</i>
+        </a>
+        <a class="lang" th:href="@{${#httpServletRequest.requestURI}(lang='ua')}">
+            <i>UA</i>
+        </a>
+    </div>
+</footer>
+</body>
+</html>
