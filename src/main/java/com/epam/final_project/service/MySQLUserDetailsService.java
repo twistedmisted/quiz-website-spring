@@ -2,7 +2,6 @@ package com.epam.final_project.service;
 
 import com.epam.final_project.entity.UserEntity;
 import com.epam.final_project.repository.UserRepository;
-import javassist.NotFoundException;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;

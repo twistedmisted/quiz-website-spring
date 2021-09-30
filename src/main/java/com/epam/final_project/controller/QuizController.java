@@ -1,26 +1,13 @@
 package com.epam.final_project.controller;
 
-import com.epam.final_project.entity.QuizEntity;
-import com.epam.final_project.entity.UsersQuizzesEntity;
-import com.epam.final_project.model.QuestionRequest;
-import com.epam.final_project.model.TestModel;
 import com.epam.final_project.service.*;
-import javassist.NotFoundException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
 import java.security.Principal;
-import java.time.Duration;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Date;
-import java.util.List;
 
 @RequestMapping("/app/quiz")
 @Controller

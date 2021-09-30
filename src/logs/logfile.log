@@ -49,3 +49,783 @@
 2021-09-20 12:10:40.734  INFO 7148 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2021-09-20 12:10:40.796  INFO 7148 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2021-09-20 12:10:40.862  INFO 7148 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-23 18:28:03.801  INFO 27748 --- [main] c.e.f.SpringFinalProjectApplication      : Starting SpringFinalProjectApplication using Java 1.8.0_302 on andrii-aspire with PID 27748 (/home/cowowner/IdeaProjects/springFinalProject/target/classes started by cowowner in /home/cowowner/IdeaProjects/springFinalProject)
+2021-09-23 18:28:03.807  INFO 27748 --- [main] c.e.f.SpringFinalProjectApplication      : No active profile set, falling back to default profiles: default
+2021-09-23 18:28:04.929  INFO 27748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-23 18:28:05.037  INFO 27748 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94 ms. Found 6 JPA repository interfaces.
+2021-09-23 18:28:05.663  INFO 27748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-23 18:28:05.675  INFO 27748 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-23 18:28:05.675  INFO 27748 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-23 18:28:05.758  INFO 27748 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-23 18:28:05.758  INFO 27748 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1823 ms
+2021-09-23 18:28:06.326  INFO 27748 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-23 18:28:06.775  INFO 27748 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-23 18:28:08.157  INFO 27748 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-23 18:28:09.078  WARN 27748 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-23 18:28:09.612  INFO 27748 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/resources/**'] with []
+2021-09-23 18:28:09.612  INFO 27748 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/static/**'] with []
+2021-09-23 18:28:09.613  INFO 27748 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-09-23 18:28:09.908 DEBUG 27748 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 28 mappings in 'requestMappingHandlerMapping'
+2021-09-23 18:28:09.921  INFO 27748 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-09-23 18:28:09.945 DEBUG 27748 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/login] in 'viewControllerHandlerMapping'
+2021-09-23 18:28:10.655 DEBUG 27748 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-09-23 18:28:10.663  INFO 27748 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2dc21583, org.springframework.security.web.context.SecurityContextPersistenceFilter@598657cd, org.springframework.security.web.header.HeaderWriterFilter@39ace1a7, org.springframework.web.filter.CorsFilter@6cbdd1c5, org.springframework.security.web.authentication.logout.LogoutFilter@3303e89e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@33a47707, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@69e2fe3b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@13fe5bb7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@60816371, org.springframework.security.web.session.SessionManagementFilter@bd4ee01, org.springframework.security.web.access.ExceptionTranslationFilter@19dac2d6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@67b5e613]
+2021-09-23 18:28:10.858 DEBUG 27748 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-09-23 18:28:10.909 DEBUG 27748 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-09-23 18:28:11.175  INFO 27748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-23 18:28:11.199  INFO 27748 --- [main] c.e.f.SpringFinalProjectApplication      : Started SpringFinalProjectApplication in 8.096 seconds (JVM running for 10.463)
+2021-09-23 18:28:21.441  INFO 27748 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-23 18:28:21.442  INFO 27748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-23 18:28:21.442 DEBUG 27748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2021-09-23 18:28:21.442 DEBUG 27748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected SessionLocaleResolver
+2021-09-23 18:28:21.443 DEBUG 27748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2021-09-23 18:28:21.444 DEBUG 27748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@377dbc50
+2021-09-23 18:28:21.445 DEBUG 27748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7540160e
+2021-09-23 18:28:21.445 DEBUG 27748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2021-09-23 18:28:21.445  INFO 27748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2021-09-23 18:28:21.475 DEBUG 27748 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.epam.final_project.controller.AppController#showHome(Model, Principal)
+2021-09-23 18:28:21.531 DEBUG 27748 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="login"]
+2021-09-23 18:28:21.538 DEBUG 27748 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2021-09-23 18:28:21.540 DEBUG 27748 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="login"]
+2021-09-23 18:28:21.552 DEBUG 27748 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2021-09-23 18:28:22.066 DEBUG 27748 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-09-23 18:28:22.117 DEBUG 27748 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/css/auth.css", parameters={}
+2021-09-23 18:28:22.122 DEBUG 27748 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2021-09-23 18:28:22.138 DEBUG 27748 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-09-23 18:28:27.989 DEBUG 27748 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="login"]
+2021-09-23 18:28:28.490 DEBUG 27748 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.epam.final_project.controller.AppController#showHome(Model, Principal)
+2021-09-23 18:28:28.494 DEBUG 27748 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/app/home", parameters={}
+2021-09-23 18:28:28.494 DEBUG 27748 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.epam.final_project.controller.AppController#showHome(Model, Principal)
+2021-09-23 18:28:28.567 DEBUG 27748 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2021-09-23 18:28:28.606 DEBUG 27748 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-09-23 18:28:28.673 DEBUG 27748 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/css/main.css", parameters={}
+2021-09-23 18:28:28.674 DEBUG 27748 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2021-09-23 18:28:28.676 DEBUG 27748 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-09-23 18:28:28.682 DEBUG 27748 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2021-09-23 18:28:28.683 DEBUG 27748 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/images/profile.png", parameters={}
+2021-09-23 18:28:28.684 DEBUG 27748 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2021-09-23 18:28:28.687 DEBUG 27748 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-09-23 18:28:31.035 DEBUG 27748 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.epam.final_project.controller.AppController#showHome(Model, Principal)
+2021-09-23 18:28:31.037 DEBUG 27748 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/app/home?lang=ua", parameters={masked}
+2021-09-23 18:28:31.038 DEBUG 27748 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.epam.final_project.controller.AppController#showHome(Model, Principal)
+2021-09-23 18:28:31.110 DEBUG 27748 --- [http-nio-8080-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2021-09-23 18:28:31.129 DEBUG 27748 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-09-23 18:28:31.167 DEBUG 27748 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2021-09-23 18:28:31.167 DEBUG 27748 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/css/main.css", parameters={}
+2021-09-23 18:28:31.168 DEBUG 27748 --- [http-nio-8080-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2021-09-23 18:28:31.168 DEBUG 27748 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/images/profile.png", parameters={}
+2021-09-23 18:28:31.169 DEBUG 27748 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2021-09-23 18:28:31.172 DEBUG 27748 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-09-23 18:28:31.172 DEBUG 27748 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2021-09-23 18:28:32.962 DEBUG 27748 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.epam.final_project.controller.AppController#showHome(Model, Principal)
+2021-09-23 18:28:32.964 DEBUG 27748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/app/home?lang=en", parameters={masked}
+2021-09-23 18:28:32.966 DEBUG 27748 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.epam.final_project.controller.AppController#showHome(Model, Principal)
+2021-09-23 18:28:33.061 DEBUG 27748 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2021-09-23 18:28:33.070 DEBUG 27748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-09-23 18:28:33.121 DEBUG 27748 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2021-09-23 18:28:33.122 DEBUG 27748 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/images/profile.png", parameters={}
+2021-09-23 18:28:33.124 DEBUG 27748 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2021-09-23 18:28:33.129 DEBUG 27748 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-09-23 18:28:35.021 DEBUG 27748 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2021-09-23 18:28:35.055 DEBUG 27748 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="login"]
+2021-09-23 18:28:35.057 DEBUG 27748 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2021-09-23 18:28:35.061 DEBUG 27748 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="login"]
+2021-09-23 18:28:35.063 DEBUG 27748 --- [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2021-09-23 18:28:35.076 DEBUG 27748 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-09-23 18:28:35.131 DEBUG 27748 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/css/auth.css", parameters={}
+2021-09-23 18:28:35.131 DEBUG 27748 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2021-09-23 18:28:35.132 DEBUG 27748 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2021-09-23 18:28:38.871  INFO 27748 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-23 18:28:38.874  INFO 27748 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-23 18:28:38.883  INFO 27748 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-30 14:24:42.111  INFO 9594 --- [main] c.e.f.controller.AdminControllerTest     : Starting AdminControllerTest using Java 1.8.0_302 on andrii-aspire with PID 9594 (started by cowowner in /home/cowowner/IdeaProjects/springFinalProject)
+2021-09-30 14:24:42.164  INFO 9594 --- [main] c.e.f.controller.AdminControllerTest     : No active profile set, falling back to default profiles: default
+2021-09-30 14:24:42.233 DEBUG 9594 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@67b9b51a
+2021-09-30 14:24:43.626  INFO 9594 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-30 14:24:43.756  INFO 9594 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 113 ms. Found 6 JPA repository interfaces.
+2021-09-30 14:24:45.650  INFO 9594 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-30 14:24:46.604  INFO 9594 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-30 14:24:49.315  INFO 9594 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 14:24:50.127  WARN 9594 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-30 14:24:51.045  INFO 9594 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/resources/**'] with []
+2021-09-30 14:24:51.048  INFO 9594 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/static/**'] with []
+2021-09-30 14:24:51.049  INFO 9594 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-09-30 14:24:51.582 DEBUG 9594 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 28 mappings in 'requestMappingHandlerMapping'
+2021-09-30 14:24:51.603  INFO 9594 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-09-30 14:24:51.697 DEBUG 9594 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/login] in 'viewControllerHandlerMapping'
+2021-09-30 14:24:52.190 DEBUG 9594 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-09-30 14:24:52.197  INFO 9594 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@35becbd4, org.springframework.security.web.context.SecurityContextPersistenceFilter@4fa5cc73, org.springframework.security.web.header.HeaderWriterFilter@143413cd, org.springframework.web.filter.CorsFilter@3bcc8f13, org.springframework.security.web.authentication.logout.LogoutFilter@298e002d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@b0d3e7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70139a81, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1bec1589, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3cb04dd, org.springframework.security.web.session.SessionManagementFilter@146f3d22, org.springframework.security.web.access.ExceptionTranslationFilter@6fbe4800, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3de56885]
+2021-09-30 14:24:52.610 DEBUG 9594 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-09-30 14:24:52.700 DEBUG 9594 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-09-30 14:24:53.461  INFO 9594 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-09-30 14:24:53.462  INFO 9594 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-09-30 14:24:53.464  INFO 9594 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2021-09-30 14:24:53.538  INFO 9594 --- [main] c.e.f.controller.AdminControllerTest     : Started AdminControllerTest in 12.522 seconds (JVM running for 15.234)
+2021-09-30 14:24:53.922 DEBUG 9594 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@67b9b51a, started on Thu Sep 30 14:24:42 EEST 2021
+2021-09-30 14:24:53.938  INFO 9594 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 14:24:53.945  INFO 9594 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-30 14:24:53.972  INFO 9594 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-30 14:28:12.381  INFO 9934 --- [main] c.e.f.controller.AdminControllerTest     : Starting AdminControllerTest using Java 1.8.0_302 on andrii-aspire with PID 9934 (started by cowowner in /home/cowowner/IdeaProjects/springFinalProject)
+2021-09-30 14:28:12.388  INFO 9934 --- [main] c.e.f.controller.AdminControllerTest     : No active profile set, falling back to default profiles: default
+2021-09-30 14:28:12.491 DEBUG 9934 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@46271dd6
+2021-09-30 14:28:13.836  INFO 9934 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-30 14:28:13.955  INFO 9934 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 104 ms. Found 6 JPA repository interfaces.
+2021-09-30 14:28:15.970  INFO 9934 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-30 14:28:16.471  INFO 9934 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-30 14:28:17.809  INFO 9934 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 14:28:18.460  WARN 9934 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-30 14:28:19.077  INFO 9934 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/resources/**'] with []
+2021-09-30 14:28:19.077  INFO 9934 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/static/**'] with []
+2021-09-30 14:28:19.078  INFO 9934 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-09-30 14:28:19.433 DEBUG 9934 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 28 mappings in 'requestMappingHandlerMapping'
+2021-09-30 14:28:19.446  INFO 9934 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-09-30 14:28:19.475 DEBUG 9934 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/login] in 'viewControllerHandlerMapping'
+2021-09-30 14:28:19.720 DEBUG 9934 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-09-30 14:28:19.727  INFO 9934 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4db6348b, org.springframework.security.web.context.SecurityContextPersistenceFilter@498a4d62, org.springframework.security.web.header.HeaderWriterFilter@101c15ad, org.springframework.web.filter.CorsFilter@7742a276, org.springframework.security.web.authentication.logout.LogoutFilter@57f0bfc3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2fb48970, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f3c5ecd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@146f3d22, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1f48fa72, org.springframework.security.web.session.SessionManagementFilter@5a466dd, org.springframework.security.web.access.ExceptionTranslationFilter@73b0ed03, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@77ba583]
+2021-09-30 14:28:20.043 DEBUG 9934 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-09-30 14:28:20.122 DEBUG 9934 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-09-30 14:28:20.536  INFO 9934 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-09-30 14:28:20.536  INFO 9934 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-09-30 14:28:20.538  INFO 9934 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2021-09-30 14:28:20.572  INFO 9934 --- [main] c.e.f.controller.AdminControllerTest     : Started AdminControllerTest in 8.924 seconds (JVM running for 10.884)
+2021-09-30 14:28:20.934 DEBUG 9934 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@46271dd6, started on Thu Sep 30 14:28:12 EEST 2021
+2021-09-30 14:28:20.946  INFO 9934 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 14:28:20.950  INFO 9934 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-30 14:28:20.975  INFO 9934 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-30 14:34:11.972  INFO 10174 --- [main] c.e.f.controller.AdminControllerTest     : Starting AdminControllerTest using Java 1.8.0_302 on andrii-aspire with PID 10174 (started by cowowner in /home/cowowner/IdeaProjects/springFinalProject)
+2021-09-30 14:34:11.978  INFO 10174 --- [main] c.e.f.controller.AdminControllerTest     : No active profile set, falling back to default profiles: default
+2021-09-30 14:34:12.025 DEBUG 10174 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@46271dd6
+2021-09-30 14:34:13.297  INFO 10174 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-30 14:34:13.411  INFO 10174 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 101 ms. Found 6 JPA repository interfaces.
+2021-09-30 14:34:15.261  INFO 10174 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-30 14:34:15.782  INFO 10174 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-30 14:34:17.097  INFO 10174 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 14:34:17.876  WARN 10174 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-30 14:34:19.003  INFO 10174 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/resources/**'] with []
+2021-09-30 14:34:19.003  INFO 10174 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/static/**'] with []
+2021-09-30 14:34:19.004  INFO 10174 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-09-30 14:34:19.329 DEBUG 10174 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 28 mappings in 'requestMappingHandlerMapping'
+2021-09-30 14:34:19.342  INFO 10174 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-09-30 14:34:19.371 DEBUG 10174 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/login] in 'viewControllerHandlerMapping'
+2021-09-30 14:34:19.619 DEBUG 10174 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-09-30 14:34:19.626  INFO 10174 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2beee3e8, org.springframework.security.web.context.SecurityContextPersistenceFilter@1760e594, org.springframework.security.web.header.HeaderWriterFilter@498a4d62, org.springframework.web.filter.CorsFilter@732d078d, org.springframework.security.web.authentication.logout.LogoutFilter@2c3f43d1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@ff5d4f1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@143413cd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@70139a81, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@58bad46f, org.springframework.security.web.session.SessionManagementFilter@3f3c5ecd, org.springframework.security.web.access.ExceptionTranslationFilter@7f2c995b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1c171746]
+2021-09-30 14:34:19.932 DEBUG 10174 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-09-30 14:34:20.019 DEBUG 10174 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-09-30 14:34:20.481  INFO 10174 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-09-30 14:34:20.481  INFO 10174 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-09-30 14:34:20.483  INFO 10174 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2021-09-30 14:34:20.523  INFO 10174 --- [main] c.e.f.controller.AdminControllerTest     : Started AdminControllerTest in 9.254 seconds (JVM running for 10.938)
+2021-09-30 14:34:20.684 DEBUG 10174 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.epam.final_project.controller.AdminController#showAdminHome()
+2021-09-30 14:34:20.749 DEBUG 10174 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.epam.final_project.controller.AdminController#showAdminHome()
+2021-09-30 14:34:20.775 DEBUG 10174 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@46271dd6, started on Thu Sep 30 14:34:12 EEST 2021
+2021-09-30 14:34:20.794  INFO 10174 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 14:34:20.811  INFO 10174 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-30 14:34:20.831  INFO 10174 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-30 14:36:49.326  INFO 10296 --- [main] c.e.f.controller.AdminControllerTest     : Starting AdminControllerTest using Java 1.8.0_302 on andrii-aspire with PID 10296 (started by cowowner in /home/cowowner/IdeaProjects/springFinalProject)
+2021-09-30 14:36:49.359  INFO 10296 --- [main] c.e.f.controller.AdminControllerTest     : No active profile set, falling back to default profiles: default
+2021-09-30 14:36:49.420 DEBUG 10296 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@46271dd6
+2021-09-30 14:36:51.134  INFO 10296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-30 14:36:51.241  INFO 10296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94 ms. Found 6 JPA repository interfaces.
+2021-09-30 14:36:52.803  INFO 10296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-30 14:36:53.302  INFO 10296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-30 14:36:54.753  INFO 10296 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 14:36:56.177  WARN 10296 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-30 14:36:56.786  INFO 10296 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/resources/**'] with []
+2021-09-30 14:36:56.787  INFO 10296 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/static/**'] with []
+2021-09-30 14:36:56.787  INFO 10296 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-09-30 14:36:57.150 DEBUG 10296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 28 mappings in 'requestMappingHandlerMapping'
+2021-09-30 14:36:57.169  INFO 10296 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-09-30 14:36:57.199 DEBUG 10296 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/login] in 'viewControllerHandlerMapping'
+2021-09-30 14:36:57.432 DEBUG 10296 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-09-30 14:36:57.438  INFO 10296 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58bad46f, org.springframework.security.web.context.SecurityContextPersistenceFilter@4b32465, org.springframework.security.web.header.HeaderWriterFilter@1179fc8c, org.springframework.web.filter.CorsFilter@7c0e4e4e, org.springframework.security.web.authentication.logout.LogoutFilter@542ff147, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@350f18a6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@66b6873f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@503556cb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@20231384, org.springframework.security.web.session.SessionManagementFilter@1760e594, org.springframework.security.web.access.ExceptionTranslationFilter@5a466dd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4cd7e993]
+2021-09-30 14:36:57.745 DEBUG 10296 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-09-30 14:36:57.833 DEBUG 10296 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-09-30 14:36:58.290  INFO 10296 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-09-30 14:36:58.290  INFO 10296 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-09-30 14:36:58.292  INFO 10296 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2021-09-30 14:36:58.333  INFO 10296 --- [main] c.e.f.controller.AdminControllerTest     : Started AdminControllerTest in 10.003 seconds (JVM running for 12.033)
+2021-09-30 14:36:58.596 DEBUG 10296 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="login"]
+2021-09-30 14:36:59.968 DEBUG 10296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.epam.final_project.controller.AdminController#showAdminHome()
+2021-09-30 14:36:59.995 DEBUG 10296 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@46271dd6, started on Thu Sep 30 14:36:49 EEST 2021
+2021-09-30 14:37:00.008  INFO 10296 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 14:37:00.011  INFO 10296 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-30 14:37:00.037  INFO 10296 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-30 14:37:27.827  INFO 10351 --- [main] c.e.f.controller.AdminControllerTest     : Starting AdminControllerTest using Java 1.8.0_302 on andrii-aspire with PID 10351 (started by cowowner in /home/cowowner/IdeaProjects/springFinalProject)
+2021-09-30 14:37:27.833  INFO 10351 --- [main] c.e.f.controller.AdminControllerTest     : No active profile set, falling back to default profiles: default
+2021-09-30 14:37:27.866 DEBUG 10351 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@46271dd6
+2021-09-30 14:37:29.189  INFO 10351 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-30 14:37:29.385  INFO 10351 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 173 ms. Found 6 JPA repository interfaces.
+2021-09-30 14:37:30.922  INFO 10351 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-30 14:37:31.419  INFO 10351 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-30 14:37:32.771  INFO 10351 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 14:37:33.410  WARN 10351 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-30 14:37:34.059  INFO 10351 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/resources/**'] with []
+2021-09-30 14:37:34.059  INFO 10351 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/static/**'] with []
+2021-09-30 14:37:34.060  INFO 10351 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-09-30 14:37:34.347 DEBUG 10351 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 28 mappings in 'requestMappingHandlerMapping'
+2021-09-30 14:37:34.357  INFO 10351 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-09-30 14:37:34.379 DEBUG 10351 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/login] in 'viewControllerHandlerMapping'
+2021-09-30 14:37:34.573 DEBUG 10351 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-09-30 14:37:34.579  INFO 10351 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58bad46f, org.springframework.security.web.context.SecurityContextPersistenceFilter@4b32465, org.springframework.security.web.header.HeaderWriterFilter@1179fc8c, org.springframework.web.filter.CorsFilter@7c0e4e4e, org.springframework.security.web.authentication.logout.LogoutFilter@542ff147, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@350f18a6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@66b6873f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@503556cb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@20231384, org.springframework.security.web.session.SessionManagementFilter@1760e594, org.springframework.security.web.access.ExceptionTranslationFilter@5a466dd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4cd7e993]
+2021-09-30 14:37:34.821 DEBUG 10351 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-09-30 14:37:34.892 DEBUG 10351 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-09-30 14:37:35.247  INFO 10351 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-09-30 14:37:35.249  INFO 10351 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-09-30 14:37:35.250  INFO 10351 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2021-09-30 14:37:35.275  INFO 10351 --- [main] c.e.f.controller.AdminControllerTest     : Started AdminControllerTest in 8.229 seconds (JVM running for 9.885)
+2021-09-30 14:37:35.421 DEBUG 10351 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="login"]
+2021-09-30 14:37:36.810 DEBUG 10351 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.epam.final_project.controller.AdminController#showAdminHome()
+2021-09-30 14:37:36.842 DEBUG 10351 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@46271dd6, started on Thu Sep 30 14:37:27 EEST 2021
+2021-09-30 14:37:36.853  INFO 10351 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 14:37:36.863  INFO 10351 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-30 14:37:36.887  INFO 10351 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-30 14:43:41.065  INFO 10558 --- [main] com.epam.final_project.LoginTest         : Starting LoginTest using Java 1.8.0_302 on andrii-aspire with PID 10558 (started by cowowner in /home/cowowner/IdeaProjects/springFinalProject)
+2021-09-30 14:43:41.070  INFO 10558 --- [main] com.epam.final_project.LoginTest         : No active profile set, falling back to default profiles: default
+2021-09-30 14:43:41.154 DEBUG 10558 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@389c4eb1
+2021-09-30 14:43:42.413  INFO 10558 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-30 14:43:42.520  INFO 10558 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 6 JPA repository interfaces.
+2021-09-30 14:43:43.925  INFO 10558 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-30 14:43:44.383  INFO 10558 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-30 14:43:45.658  INFO 10558 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 14:43:46.527  WARN 10558 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-30 14:43:47.589  INFO 10558 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/resources/**'] with []
+2021-09-30 14:43:47.590  INFO 10558 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/static/**'] with []
+2021-09-30 14:43:47.590  INFO 10558 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-09-30 14:43:48.001 DEBUG 10558 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 28 mappings in 'requestMappingHandlerMapping'
+2021-09-30 14:43:48.028  INFO 10558 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-09-30 14:43:48.069 DEBUG 10558 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/login] in 'viewControllerHandlerMapping'
+2021-09-30 14:43:48.323 DEBUG 10558 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-09-30 14:43:48.329  INFO 10558 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@732d078d, org.springframework.security.web.context.SecurityContextPersistenceFilter@143413cd, org.springframework.security.web.header.HeaderWriterFilter@3f3c5ecd, org.springframework.web.filter.CorsFilter@58bad46f, org.springframework.security.web.authentication.logout.LogoutFilter@f10d055, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@254e9709, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@146f3d22, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@15e5246, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c0e4e4e, org.springframework.security.web.session.SessionManagementFilter@a03529c, org.springframework.security.web.access.ExceptionTranslationFilter@6068ebb2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@586737ff]
+2021-09-30 14:43:48.654 DEBUG 10558 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-09-30 14:43:48.746 DEBUG 10558 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-09-30 14:43:49.118  INFO 10558 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-09-30 14:43:49.118  INFO 10558 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-09-30 14:43:49.120  INFO 10558 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2021-09-30 14:43:49.149  INFO 10558 --- [main] com.epam.final_project.LoginTest         : Started LoginTest in 8.768 seconds (JVM running for 10.461)
+2021-09-30 14:43:49.289 DEBUG 10558 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="login"]
+2021-09-30 14:43:50.023 DEBUG 10558 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="login"]
+2021-09-30 14:43:50.296 DEBUG 10558 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.epam.final_project.controller.AppController#showHome(Model, Principal)
+2021-09-30 14:43:50.335 DEBUG 10558 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@389c4eb1, started on Thu Sep 30 14:43:41 EEST 2021
+2021-09-30 14:43:50.353  INFO 10558 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 14:43:50.362  INFO 10558 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-30 14:43:50.383  INFO 10558 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-30 14:45:06.525  INFO 10634 --- [main] com.epam.final_project.LoginTest         : Starting LoginTest using Java 1.8.0_302 on andrii-aspire with PID 10634 (started by cowowner in /home/cowowner/IdeaProjects/springFinalProject)
+2021-09-30 14:45:06.537  INFO 10634 --- [main] com.epam.final_project.LoginTest         : No active profile set, falling back to default profiles: default
+2021-09-30 14:45:06.624 DEBUG 10634 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@389c4eb1
+2021-09-30 14:45:09.245  INFO 10634 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-30 14:45:09.394  INFO 10634 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 132 ms. Found 6 JPA repository interfaces.
+2021-09-30 14:45:11.372  INFO 10634 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-30 14:45:12.193  INFO 10634 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-30 14:45:14.872  INFO 10634 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 14:45:16.233  WARN 10634 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-30 14:45:18.060  INFO 10634 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/resources/**'] with []
+2021-09-30 14:45:18.060  INFO 10634 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/static/**'] with []
+2021-09-30 14:45:18.061  INFO 10634 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-09-30 14:45:19.018 DEBUG 10634 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 28 mappings in 'requestMappingHandlerMapping'
+2021-09-30 14:45:19.052  INFO 10634 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-09-30 14:45:19.107 DEBUG 10634 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/login] in 'viewControllerHandlerMapping'
+2021-09-30 14:45:19.619 DEBUG 10634 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-09-30 14:45:19.658  INFO 10634 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7742a276, org.springframework.security.web.context.SecurityContextPersistenceFilter@6fbe4800, org.springframework.security.web.header.HeaderWriterFilter@6068ebb2, org.springframework.web.filter.CorsFilter@1f48fa72, org.springframework.security.web.authentication.logout.LogoutFilter@14590fe2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4e8d9bb6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1179fc8c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@66b6873f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@35b3c1f6, org.springframework.security.web.session.SessionManagementFilter@1ed9d173, org.springframework.security.web.access.ExceptionTranslationFilter@55061418, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5613247e]
+2021-09-30 14:45:20.228 DEBUG 10634 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-09-30 14:45:20.379 DEBUG 10634 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-09-30 14:45:20.822  INFO 10634 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-09-30 14:45:20.823  INFO 10634 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-09-30 14:45:20.826  INFO 10634 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2021-09-30 14:45:20.863  INFO 10634 --- [main] com.epam.final_project.LoginTest         : Started LoginTest in 15.589 seconds (JVM running for 17.841)
+2021-09-30 14:45:21.010 DEBUG 10634 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="login"]
+2021-09-30 14:45:21.599 DEBUG 10634 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="login"]
+2021-09-30 14:45:21.802 DEBUG 10634 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.epam.final_project.controller.AppController#showHome(Model, Principal)
+2021-09-30 14:45:21.833 DEBUG 10634 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@389c4eb1, started on Thu Sep 30 14:45:06 EEST 2021
+2021-09-30 14:45:21.853  INFO 10634 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 14:45:21.863  INFO 10634 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-30 14:45:21.890  INFO 10634 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-30 14:52:11.075  INFO 10920 --- [main] com.epam.final_project.LoginTest         : Starting LoginTest using Java 1.8.0_302 on andrii-aspire with PID 10920 (started by cowowner in /home/cowowner/IdeaProjects/springFinalProject)
+2021-09-30 14:52:11.081  INFO 10920 --- [main] com.epam.final_project.LoginTest         : No active profile set, falling back to default profiles: default
+2021-09-30 14:52:11.130 DEBUG 10920 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@34f6515b
+2021-09-30 14:52:12.588  INFO 10920 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-30 14:52:12.685  INFO 10920 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 6 JPA repository interfaces.
+2021-09-30 14:52:14.174  INFO 10920 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-30 14:52:14.712  INFO 10920 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-30 14:52:16.145  INFO 10920 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 14:52:16.857  WARN 10920 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-30 14:52:17.515  INFO 10920 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/resources/**'] with []
+2021-09-30 14:52:17.516  INFO 10920 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/static/**'] with []
+2021-09-30 14:52:17.516  INFO 10920 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-09-30 14:52:17.856 DEBUG 10920 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 28 mappings in 'requestMappingHandlerMapping'
+2021-09-30 14:52:17.872  INFO 10920 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-09-30 14:52:17.902 DEBUG 10920 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/login] in 'viewControllerHandlerMapping'
+2021-09-30 14:52:18.180 DEBUG 10920 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-09-30 14:52:18.186  INFO 10920 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@48d5ca17, org.springframework.security.web.context.SecurityContextPersistenceFilter@16391278, org.springframework.security.web.header.HeaderWriterFilter@3feebf9c, org.springframework.web.filter.CorsFilter@226e07e7, org.springframework.security.web.authentication.logout.LogoutFilter@6fbe4800, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5d01b0d8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4ae49387, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6ba0ee4a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c31e410, org.springframework.security.web.session.SessionManagementFilter@55e42684, org.springframework.security.web.access.ExceptionTranslationFilter@344f9467, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5e541ef9]
+2021-09-30 14:52:18.508 DEBUG 10920 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-09-30 14:52:18.603 DEBUG 10920 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-09-30 14:52:18.968  INFO 10920 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-09-30 14:52:18.969  INFO 10920 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-09-30 14:52:18.971  INFO 10920 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2021-09-30 14:52:18.999  INFO 10920 --- [main] com.epam.final_project.LoginTest         : Started LoginTest in 8.627 seconds (JVM running for 10.446)
+2021-09-30 14:52:19.133 DEBUG 10920 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="login"]
+2021-09-30 14:52:19.891 DEBUG 10920 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="login"]
+2021-09-30 14:52:20.764 DEBUG 10920 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.epam.final_project.controller.AppController#showHome(Model, Principal)
+2021-09-30 14:52:20.809 DEBUG 10920 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@34f6515b, started on Thu Sep 30 14:52:11 EEST 2021
+2021-09-30 14:52:20.836  INFO 10920 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 14:52:20.840  INFO 10920 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-30 14:52:20.862  INFO 10920 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-30 14:54:19.418  INFO 11004 --- [main] com.epam.final_project.LoginTest         : Starting LoginTest using Java 1.8.0_302 on andrii-aspire with PID 11004 (started by cowowner in /home/cowowner/IdeaProjects/springFinalProject)
+2021-09-30 14:54:19.456  INFO 11004 --- [main] com.epam.final_project.LoginTest         : No active profile set, falling back to default profiles: default
+2021-09-30 14:54:19.548 DEBUG 11004 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@135606db
+2021-09-30 14:54:22.140  INFO 11004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-30 14:54:22.376  INFO 11004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 212 ms. Found 6 JPA repository interfaces.
+2021-09-30 14:54:24.782  INFO 11004 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-30 14:54:25.494  INFO 11004 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-30 14:54:27.558  INFO 11004 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 14:54:28.890  WARN 11004 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-30 14:54:30.369  INFO 11004 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/resources/**'] with []
+2021-09-30 14:54:30.371  INFO 11004 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/static/**'] with []
+2021-09-30 14:54:30.373  INFO 11004 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-09-30 14:54:30.836 DEBUG 11004 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 28 mappings in 'requestMappingHandlerMapping'
+2021-09-30 14:54:30.942  INFO 11004 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-09-30 14:54:30.973 DEBUG 11004 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/login] in 'viewControllerHandlerMapping'
+2021-09-30 14:54:31.224 DEBUG 11004 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-09-30 14:54:31.230  INFO 11004 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@df9d400, org.springframework.security.web.context.SecurityContextPersistenceFilter@1bec1589, org.springframework.security.web.header.HeaderWriterFilter@15e5246, org.springframework.web.filter.CorsFilter@4ec427, org.springframework.security.web.authentication.logout.LogoutFilter@58fbcb71, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@71fb8301, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@14590fe2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@542ff147, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c8d45cf, org.springframework.security.web.session.SessionManagementFilter@3c9e19de, org.springframework.security.web.access.ExceptionTranslationFilter@66b6873f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4db728df]
+2021-09-30 14:54:31.537 DEBUG 11004 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-09-30 14:54:31.661 DEBUG 11004 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-09-30 14:54:32.301  INFO 11004 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-09-30 14:54:32.301  INFO 11004 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-09-30 14:54:32.306  INFO 11004 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 4 ms
+2021-09-30 14:54:32.354  INFO 11004 --- [main] com.epam.final_project.LoginTest         : Started LoginTest in 13.852 seconds (JVM running for 16.511)
+2021-09-30 14:54:32.516 DEBUG 11004 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2021-09-30 14:54:32.540 DEBUG 11004 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2021-09-30 14:54:32.549 DEBUG 11004 --- [main] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2021-09-30 14:54:32.617 DEBUG 11004 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@135606db, started on Thu Sep 30 14:54:19 EEST 2021
+2021-09-30 14:54:32.642  INFO 11004 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 14:54:32.647  INFO 11004 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-30 14:54:32.690  INFO 11004 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-30 14:55:10.343  INFO 11111 --- [main] com.epam.final_project.LoginTest         : Starting LoginTest using Java 1.8.0_302 on andrii-aspire with PID 11111 (started by cowowner in /home/cowowner/IdeaProjects/springFinalProject)
+2021-09-30 14:55:10.352  INFO 11111 --- [main] com.epam.final_project.LoginTest         : No active profile set, falling back to default profiles: default
+2021-09-30 14:55:10.476 DEBUG 11111 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@135606db
+2021-09-30 14:55:12.203  INFO 11111 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-30 14:55:12.326  INFO 11111 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106 ms. Found 6 JPA repository interfaces.
+2021-09-30 14:55:14.042  INFO 11111 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-30 14:55:14.717  INFO 11111 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-30 14:55:16.892  INFO 11111 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 14:55:18.198  WARN 11111 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-30 14:55:19.104  INFO 11111 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/resources/**'] with []
+2021-09-30 14:55:19.105  INFO 11111 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/static/**'] with []
+2021-09-30 14:55:19.105  INFO 11111 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-09-30 14:55:19.545 DEBUG 11111 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 28 mappings in 'requestMappingHandlerMapping'
+2021-09-30 14:55:19.562  INFO 11111 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-09-30 14:55:19.593 DEBUG 11111 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/login] in 'viewControllerHandlerMapping'
+2021-09-30 14:55:19.820 DEBUG 11111 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-09-30 14:55:19.826  INFO 11111 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@df9d400, org.springframework.security.web.context.SecurityContextPersistenceFilter@1bec1589, org.springframework.security.web.header.HeaderWriterFilter@15e5246, org.springframework.web.filter.CorsFilter@4ec427, org.springframework.security.web.authentication.logout.LogoutFilter@58fbcb71, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@71fb8301, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@14590fe2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@542ff147, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c8d45cf, org.springframework.security.web.session.SessionManagementFilter@3c9e19de, org.springframework.security.web.access.ExceptionTranslationFilter@66b6873f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4db728df]
+2021-09-30 14:55:20.148 DEBUG 11111 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-09-30 14:55:20.239 DEBUG 11111 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-09-30 14:55:20.817  INFO 11111 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-09-30 14:55:20.818  INFO 11111 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-09-30 14:55:20.820  INFO 11111 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2021-09-30 14:55:20.876  INFO 11111 --- [main] com.epam.final_project.LoginTest         : Started LoginTest in 11.876 seconds (JVM running for 14.712)
+2021-09-30 14:55:21.187 DEBUG 11111 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="login"]
+2021-09-30 14:55:22.144 DEBUG 11111 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@135606db, started on Thu Sep 30 14:55:10 EEST 2021
+2021-09-30 14:55:22.165  INFO 11111 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 14:55:22.170  INFO 11111 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-30 14:55:22.186  INFO 11111 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-30 14:56:34.422  INFO 11195 --- [main] com.epam.final_project.LoginTest         : Starting LoginTest using Java 1.8.0_302 on andrii-aspire with PID 11195 (started by cowowner in /home/cowowner/IdeaProjects/springFinalProject)
+2021-09-30 14:56:34.457  INFO 11195 --- [main] com.epam.final_project.LoginTest         : No active profile set, falling back to default profiles: default
+2021-09-30 14:56:34.555 DEBUG 11195 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6d7fc27
+2021-09-30 14:56:35.840  INFO 11195 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-30 14:56:35.951  INFO 11195 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97 ms. Found 6 JPA repository interfaces.
+2021-09-30 14:56:37.448  INFO 11195 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-30 14:56:37.959  INFO 11195 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-30 14:56:39.317  INFO 11195 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 14:56:40.041  WARN 11195 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-30 14:56:40.688  INFO 11195 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/resources/**'] with []
+2021-09-30 14:56:40.689  INFO 11195 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/static/**'] with []
+2021-09-30 14:56:40.689  INFO 11195 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-09-30 14:56:41.007 DEBUG 11195 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 28 mappings in 'requestMappingHandlerMapping'
+2021-09-30 14:56:41.020  INFO 11195 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-09-30 14:56:41.044 DEBUG 11195 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/login] in 'viewControllerHandlerMapping'
+2021-09-30 14:56:41.250 DEBUG 11195 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-09-30 14:56:41.255  INFO 11195 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3cb04dd, org.springframework.security.web.context.SecurityContextPersistenceFilter@70139a81, org.springframework.security.web.header.HeaderWriterFilter@146f3d22, org.springframework.web.filter.CorsFilter@73d91faf, org.springframework.security.web.authentication.logout.LogoutFilter@3c6bd624, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@68a5aadd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15e5246, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14590fe2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@30fa8a6b, org.springframework.security.web.session.SessionManagementFilter@52285a5f, org.springframework.security.web.access.ExceptionTranslationFilter@1179fc8c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2d07aacc]
+2021-09-30 14:56:41.513 DEBUG 11195 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-09-30 14:56:41.590 DEBUG 11195 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-09-30 14:56:41.946  INFO 11195 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-09-30 14:56:41.946  INFO 11195 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-09-30 14:56:41.949  INFO 11195 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2021-09-30 14:56:41.980  INFO 11195 --- [main] com.epam.final_project.LoginTest         : Started LoginTest in 8.175 seconds (JVM running for 9.973)
+2021-09-30 14:56:42.112 DEBUG 11195 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="login"]
+2021-09-30 14:56:42.726 DEBUG 11195 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@6d7fc27, started on Thu Sep 30 14:56:34 EEST 2021
+2021-09-30 14:56:42.758  INFO 11195 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 14:56:42.769  INFO 11195 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-30 14:56:42.796  INFO 11195 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-30 15:01:06.887  INFO 11347 --- [main] com.epam.final_project.LoginTest         : Starting LoginTest using Java 1.8.0_302 on andrii-aspire with PID 11347 (started by cowowner in /home/cowowner/IdeaProjects/springFinalProject)
+2021-09-30 15:01:06.896  INFO 11347 --- [main] com.epam.final_project.LoginTest         : No active profile set, falling back to default profiles: default
+2021-09-30 15:01:06.940 DEBUG 11347 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@135606db
+2021-09-30 15:01:08.341  INFO 11347 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-30 15:01:08.451  INFO 11347 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 6 JPA repository interfaces.
+2021-09-30 15:01:09.905  INFO 11347 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-30 15:01:10.429  INFO 11347 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-30 15:01:11.812  INFO 11347 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 15:01:12.517  WARN 11347 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-30 15:01:13.196  INFO 11347 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/resources/**'] with []
+2021-09-30 15:01:13.196  INFO 11347 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/static/**'] with []
+2021-09-30 15:01:13.197  INFO 11347 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-09-30 15:01:13.563 DEBUG 11347 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 28 mappings in 'requestMappingHandlerMapping'
+2021-09-30 15:01:13.578  INFO 11347 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-09-30 15:01:13.609 DEBUG 11347 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/login] in 'viewControllerHandlerMapping'
+2021-09-30 15:01:13.844 DEBUG 11347 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-09-30 15:01:13.850  INFO 11347 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@30fa8a6b, org.springframework.security.web.context.SecurityContextPersistenceFilter@15e5246, org.springframework.security.web.header.HeaderWriterFilter@52285a5f, org.springframework.web.filter.CorsFilter@6f112f70, org.springframework.security.web.authentication.logout.LogoutFilter@645ba24a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1a89414e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c9e19de, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2299d903, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@342723a3, org.springframework.security.web.session.SessionManagementFilter@224e6e88, org.springframework.security.web.access.ExceptionTranslationFilter@1760e594, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@194224ca]
+2021-09-30 15:01:14.118 DEBUG 11347 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-09-30 15:01:14.201 DEBUG 11347 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-09-30 15:01:14.563  INFO 11347 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-09-30 15:01:14.563  INFO 11347 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-09-30 15:01:14.566  INFO 11347 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2021-09-30 15:01:14.602  INFO 11347 --- [main] com.epam.final_project.LoginTest         : Started LoginTest in 8.485 seconds (JVM running for 10.2)
+2021-09-30 15:01:14.732 DEBUG 11347 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="login"]
+2021-09-30 15:01:15.387 DEBUG 11347 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@135606db, started on Thu Sep 30 15:01:06 EEST 2021
+2021-09-30 15:01:15.418  INFO 11347 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 15:01:15.424  INFO 11347 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-30 15:01:15.444  INFO 11347 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-30 15:02:07.340  INFO 11411 --- [main] com.epam.final_project.LoginTest         : Starting LoginTest using Java 1.8.0_302 on andrii-aspire with PID 11411 (started by cowowner in /home/cowowner/IdeaProjects/springFinalProject)
+2021-09-30 15:02:07.347  INFO 11411 --- [main] com.epam.final_project.LoginTest         : No active profile set, falling back to default profiles: default
+2021-09-30 15:02:07.399 DEBUG 11411 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6d7fc27
+2021-09-30 15:02:08.764  INFO 11411 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-30 15:02:08.929  INFO 11411 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 150 ms. Found 6 JPA repository interfaces.
+2021-09-30 15:02:10.454  INFO 11411 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-30 15:02:11.361  INFO 11411 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-30 15:02:13.048  INFO 11411 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 15:02:13.885  WARN 11411 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-30 15:02:14.594  INFO 11411 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/resources/**'] with []
+2021-09-30 15:02:14.594  INFO 11411 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/static/**'] with []
+2021-09-30 15:02:14.594  INFO 11411 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-09-30 15:02:14.971 DEBUG 11411 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 28 mappings in 'requestMappingHandlerMapping'
+2021-09-30 15:02:14.984  INFO 11411 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-09-30 15:02:15.014 DEBUG 11411 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/login] in 'viewControllerHandlerMapping'
+2021-09-30 15:02:15.262 DEBUG 11411 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-09-30 15:02:15.269  INFO 11411 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6f112f70, org.springframework.security.web.context.SecurityContextPersistenceFilter@503556cb, org.springframework.security.web.header.HeaderWriterFilter@4fa5cc73, org.springframework.web.filter.CorsFilter@342723a3, org.springframework.security.web.authentication.logout.LogoutFilter@5f6a8efe, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@17f8db6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@12aa381f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@70c56434, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f3876ef, org.springframework.security.web.session.SessionManagementFilter@70139a81, org.springframework.security.web.access.ExceptionTranslationFilter@4af70b83, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@254e9709]
+2021-09-30 15:02:15.594 DEBUG 11411 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-09-30 15:02:15.680 DEBUG 11411 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-09-30 15:02:16.062  INFO 11411 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-09-30 15:02:16.063  INFO 11411 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-09-30 15:02:16.065  INFO 11411 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2021-09-30 15:02:16.098  INFO 11411 --- [main] com.epam.final_project.LoginTest         : Started LoginTest in 9.557 seconds (JVM running for 11.485)
+2021-09-30 15:02:16.251 DEBUG 11411 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="login"]
+2021-09-30 15:02:17.069 DEBUG 11411 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@6d7fc27, started on Thu Sep 30 15:02:07 EEST 2021
+2021-09-30 15:02:17.087  INFO 11411 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 15:02:17.091  INFO 11411 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-30 15:02:17.121  INFO 11411 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-30 15:03:23.307  INFO 11498 --- [main] com.epam.final_project.LoginTest         : Starting LoginTest using Java 1.8.0_302 on andrii-aspire with PID 11498 (started by cowowner in /home/cowowner/IdeaProjects/springFinalProject)
+2021-09-30 15:03:23.324  INFO 11498 --- [main] com.epam.final_project.LoginTest         : No active profile set, falling back to default profiles: default
+2021-09-30 15:03:23.446 DEBUG 11498 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@135606db
+2021-09-30 15:03:25.409  INFO 11498 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-30 15:03:25.576  INFO 11498 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 152 ms. Found 6 JPA repository interfaces.
+2021-09-30 15:03:27.223  INFO 11498 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-30 15:03:27.786  INFO 11498 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-30 15:03:29.356  INFO 11498 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 15:03:30.797  WARN 11498 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-30 15:03:31.589  INFO 11498 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/resources/**'] with []
+2021-09-30 15:03:31.590  INFO 11498 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/static/**'] with []
+2021-09-30 15:03:31.591  INFO 11498 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-09-30 15:03:32.083 DEBUG 11498 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 28 mappings in 'requestMappingHandlerMapping'
+2021-09-30 15:03:32.096  INFO 11498 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-09-30 15:03:32.118 DEBUG 11498 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/login] in 'viewControllerHandlerMapping'
+2021-09-30 15:03:32.344 DEBUG 11498 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-09-30 15:03:32.350  INFO 11498 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2beee3e8, org.springframework.security.web.context.SecurityContextPersistenceFilter@4af70b83, org.springframework.security.web.header.HeaderWriterFilter@6fbe4800, org.springframework.web.filter.CorsFilter@732d078d, org.springframework.security.web.authentication.logout.LogoutFilter@632d4cf2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@194224ca, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b32465, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@60f9dc7e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@58bad46f, org.springframework.security.web.session.SessionManagementFilter@1179fc8c, org.springframework.security.web.access.ExceptionTranslationFilter@101c15ad, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@79b7c350]
+2021-09-30 15:03:32.631 DEBUG 11498 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-09-30 15:03:32.774 DEBUG 11498 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-09-30 15:03:33.184  INFO 11498 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-09-30 15:03:33.184  INFO 11498 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-09-30 15:03:33.188  INFO 11498 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 4 ms
+2021-09-30 15:03:33.226  INFO 11498 --- [main] com.epam.final_project.LoginTest         : Started LoginTest in 11.476 seconds (JVM running for 13.93)
+2021-09-30 15:03:33.349 DEBUG 11498 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="login"]
+2021-09-30 15:03:34.020 DEBUG 11498 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@135606db, started on Thu Sep 30 15:03:23 EEST 2021
+2021-09-30 15:03:34.041  INFO 11498 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 15:03:34.045  INFO 11498 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-30 15:03:34.068  INFO 11498 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-30 15:03:59.224  INFO 11575 --- [main] com.epam.final_project.LoginTest         : Starting LoginTest using Java 1.8.0_302 on andrii-aspire with PID 11575 (started by cowowner in /home/cowowner/IdeaProjects/springFinalProject)
+2021-09-30 15:03:59.230  INFO 11575 --- [main] com.epam.final_project.LoginTest         : No active profile set, falling back to default profiles: default
+2021-09-30 15:03:59.282 DEBUG 11575 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@135606db
+2021-09-30 15:04:00.816  INFO 11575 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-30 15:04:00.942  INFO 11575 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 111 ms. Found 6 JPA repository interfaces.
+2021-09-30 15:04:02.477  INFO 11575 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-30 15:04:02.975  INFO 11575 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-30 15:04:04.390  INFO 11575 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 15:04:05.063  WARN 11575 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-30 15:04:05.703  INFO 11575 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/resources/**'] with []
+2021-09-30 15:04:05.704  INFO 11575 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/static/**'] with []
+2021-09-30 15:04:05.704  INFO 11575 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-09-30 15:04:06.002 DEBUG 11575 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 28 mappings in 'requestMappingHandlerMapping'
+2021-09-30 15:04:06.013  INFO 11575 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-09-30 15:04:06.034 DEBUG 11575 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/login] in 'viewControllerHandlerMapping'
+2021-09-30 15:04:06.236 DEBUG 11575 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-09-30 15:04:06.242  INFO 11575 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@342723a3, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c9e19de, org.springframework.security.web.header.HeaderWriterFilter@224e6e88, org.springframework.web.filter.CorsFilter@f3876ef, org.springframework.security.web.authentication.logout.LogoutFilter@3dd2b9c1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@44492c06, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6115846e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c3f43d1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b751cb1, org.springframework.security.web.session.SessionManagementFilter@60f9dc7e, org.springframework.security.web.access.ExceptionTranslationFilter@143413cd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@350f18a6]
+2021-09-30 15:04:06.494 DEBUG 11575 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-09-30 15:04:06.566 DEBUG 11575 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-09-30 15:04:06.919  INFO 11575 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-09-30 15:04:06.919  INFO 11575 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-09-30 15:04:06.922  INFO 11575 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2021-09-30 15:04:06.954  INFO 11575 --- [main] com.epam.final_project.LoginTest         : Started LoginTest in 8.504 seconds (JVM running for 10.415)
+2021-09-30 15:04:07.073 DEBUG 11575 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="login"]
+2021-09-30 15:04:07.709 DEBUG 11575 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@135606db, started on Thu Sep 30 15:03:59 EEST 2021
+2021-09-30 15:04:07.720  INFO 11575 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 15:04:07.723  INFO 11575 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-30 15:04:07.741  INFO 11575 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-30 15:04:46.897  INFO 11640 --- [main] com.epam.final_project.LoginTest         : Starting LoginTest using Java 1.8.0_302 on andrii-aspire with PID 11640 (started by cowowner in /home/cowowner/IdeaProjects/springFinalProject)
+2021-09-30 15:04:46.905  INFO 11640 --- [main] com.epam.final_project.LoginTest         : No active profile set, falling back to default profiles: default
+2021-09-30 15:04:46.942 DEBUG 11640 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@135606db
+2021-09-30 15:04:48.756  INFO 11640 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-30 15:04:48.924  INFO 11640 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 154 ms. Found 6 JPA repository interfaces.
+2021-09-30 15:04:50.533  INFO 11640 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-30 15:04:51.079  INFO 11640 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-30 15:04:52.461  INFO 11640 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 15:04:53.298  WARN 11640 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-30 15:04:54.016  INFO 11640 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/resources/**'] with []
+2021-09-30 15:04:54.017  INFO 11640 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/static/**'] with []
+2021-09-30 15:04:54.017  INFO 11640 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-09-30 15:04:54.373 DEBUG 11640 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 28 mappings in 'requestMappingHandlerMapping'
+2021-09-30 15:04:54.386  INFO 11640 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-09-30 15:04:54.410 DEBUG 11640 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/login] in 'viewControllerHandlerMapping'
+2021-09-30 15:04:54.702 DEBUG 11640 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-09-30 15:04:54.708  INFO 11640 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@495da9a7, org.springframework.security.web.context.SecurityContextPersistenceFilter@a03529c, org.springframework.security.web.header.HeaderWriterFilter@6e981e78, org.springframework.web.filter.CorsFilter@2beee3e8, org.springframework.security.web.authentication.logout.LogoutFilter@70c56434, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2d07aacc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4af70b83, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@224e6e88, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@732d078d, org.springframework.security.web.session.SessionManagementFilter@6fbe4800, org.springframework.security.web.access.ExceptionTranslationFilter@1aeff8ca, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5368e981]
+2021-09-30 15:04:55.020 DEBUG 11640 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-09-30 15:04:55.124 DEBUG 11640 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-09-30 15:04:55.501  INFO 11640 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-09-30 15:04:55.501  INFO 11640 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-09-30 15:04:55.502  INFO 11640 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2021-09-30 15:04:55.539  INFO 11640 --- [main] com.epam.final_project.LoginTest         : Started LoginTest in 9.768 seconds (JVM running for 11.992)
+2021-09-30 15:04:55.680 DEBUG 11640 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="login"]
+2021-09-30 15:04:56.259 DEBUG 11640 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@135606db, started on Thu Sep 30 15:04:46 EEST 2021
+2021-09-30 15:04:56.269  INFO 11640 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 15:04:56.283  INFO 11640 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-30 15:04:56.318  INFO 11640 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-30 15:05:18.532  INFO 11705 --- [main] com.epam.final_project.LoginTest         : Starting LoginTest using Java 1.8.0_302 on andrii-aspire with PID 11705 (started by cowowner in /home/cowowner/IdeaProjects/springFinalProject)
+2021-09-30 15:05:18.542  INFO 11705 --- [main] com.epam.final_project.LoginTest         : No active profile set, falling back to default profiles: default
+2021-09-30 15:05:18.601 DEBUG 11705 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@518caac3
+2021-09-30 15:05:20.445  INFO 11705 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-30 15:05:20.680  INFO 11705 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 215 ms. Found 6 JPA repository interfaces.
+2021-09-30 15:05:22.547  INFO 11705 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-30 15:05:23.209  INFO 11705 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-30 15:05:24.748  INFO 11705 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 15:05:25.577  WARN 11705 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-30 15:05:26.191  INFO 11705 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/resources/**'] with []
+2021-09-30 15:05:26.192  INFO 11705 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/static/**'] with []
+2021-09-30 15:05:26.192  INFO 11705 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-09-30 15:05:26.557 DEBUG 11705 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 28 mappings in 'requestMappingHandlerMapping'
+2021-09-30 15:05:26.570  INFO 11705 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-09-30 15:05:26.599 DEBUG 11705 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/login] in 'viewControllerHandlerMapping'
+2021-09-30 15:05:26.838 DEBUG 11705 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-09-30 15:05:26.844  INFO 11705 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1c58d7be, org.springframework.security.web.context.SecurityContextPersistenceFilter@2c3f43d1, org.springframework.security.web.header.HeaderWriterFilter@57f0bfc3, org.springframework.web.filter.CorsFilter@61b8c9de, org.springframework.security.web.authentication.logout.LogoutFilter@2c2a7d53, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5c1c9881, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@f10d055, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c6bd624, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b34c7c9, org.springframework.security.web.session.SessionManagementFilter@5922cff3, org.springframework.security.web.access.ExceptionTranslationFilter@15e5246, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@17f8db6]
+2021-09-30 15:05:27.153 DEBUG 11705 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-09-30 15:05:27.241 DEBUG 11705 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-09-30 15:05:27.621  INFO 11705 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-09-30 15:05:27.621  INFO 11705 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-09-30 15:05:27.623  INFO 11705 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2021-09-30 15:05:27.655  INFO 11705 --- [main] com.epam.final_project.LoginTest         : Started LoginTest in 10.115 seconds (JVM running for 12.457)
+2021-09-30 15:05:27.802 DEBUG 11705 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="login"]
+2021-09-30 15:05:28.354 DEBUG 11705 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="login"]
+2021-09-30 15:05:28.562 DEBUG 11705 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.epam.final_project.controller.AppController#showHome(Model, Principal)
+2021-09-30 15:05:28.589 DEBUG 11705 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@518caac3, started on Thu Sep 30 15:05:18 EEST 2021
+2021-09-30 15:05:28.601  INFO 11705 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 15:05:28.634  INFO 11705 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-30 15:05:28.692  INFO 11705 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-30 15:12:13.297  INFO 11893 --- [main] c.e.f.SpringFinalProjectApplication      : Starting SpringFinalProjectApplication using Java 1.8.0_302 on andrii-aspire with PID 11893 (/home/cowowner/IdeaProjects/springFinalProject/target/classes started by cowowner in /home/cowowner/IdeaProjects/springFinalProject)
+2021-09-30 15:12:13.315  INFO 11893 --- [main] c.e.f.SpringFinalProjectApplication      : No active profile set, falling back to default profiles: default
+2021-09-30 15:12:14.771  INFO 11893 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-30 15:12:14.851  INFO 11893 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 6 JPA repository interfaces.
+2021-09-30 15:12:15.608  INFO 11893 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-09-30 15:12:15.628  INFO 11893 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-30 15:12:15.628  INFO 11893 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-30 15:12:15.743  INFO 11893 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-30 15:12:15.744  INFO 11893 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2298 ms
+2021-09-30 15:12:16.188  INFO 11893 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-30 15:12:16.512  INFO 11893 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-30 15:12:17.387  INFO 11893 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 15:12:17.725  WARN 11893 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-30 15:12:17.917  INFO 11893 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/resources/**'] with []
+2021-09-30 15:12:17.918  INFO 11893 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/static/**'] with []
+2021-09-30 15:12:17.918  INFO 11893 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-09-30 15:12:18.046 DEBUG 11893 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 28 mappings in 'requestMappingHandlerMapping'
+2021-09-30 15:12:18.057  INFO 11893 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-09-30 15:12:18.067 DEBUG 11893 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/login] in 'viewControllerHandlerMapping'
+2021-09-30 15:12:18.149 DEBUG 11893 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-09-30 15:12:18.153  INFO 11893 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6f2d3391, org.springframework.security.web.context.SecurityContextPersistenceFilter@be6d228, org.springframework.security.web.header.HeaderWriterFilter@8432469, org.springframework.web.filter.CorsFilter@71b0289b, org.springframework.security.web.authentication.logout.LogoutFilter@211a9647, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7996d0d4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7eee6c13, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a3ad8e7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42cc420b, org.springframework.security.web.session.SessionManagementFilter@15c16f19, org.springframework.security.web.access.ExceptionTranslationFilter@3386c206, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@63187d63]
+2021-09-30 15:12:18.225 DEBUG 11893 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-09-30 15:12:18.520 DEBUG 11893 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-09-30 15:12:18.683  INFO 11893 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-09-30 15:12:18.695  INFO 11893 --- [main] c.e.f.SpringFinalProjectApplication      : Started SpringFinalProjectApplication in 6.587 seconds (JVM running for 7.641)
+2021-09-30 15:13:05.324  INFO 11893 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-30 15:13:05.325  INFO 11893 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-30 15:13:05.325 DEBUG 11893 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2021-09-30 15:13:05.325 DEBUG 11893 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected SessionLocaleResolver
+2021-09-30 15:13:05.325 DEBUG 11893 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2021-09-30 15:13:05.326 DEBUG 11893 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1201e064
+2021-09-30 15:13:05.326 DEBUG 11893 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@53f495f0
+2021-09-30 15:13:05.327 DEBUG 11893 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2021-09-30 15:13:05.327  INFO 11893 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-09-30 15:13:05.384 DEBUG 11893 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="login"]
+2021-09-30 15:13:05.387 DEBUG 11893 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2021-09-30 15:13:05.389 DEBUG 11893 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="login"]
+2021-09-30 15:13:05.399 DEBUG 11893 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2021-09-30 15:13:05.796 DEBUG 11893 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-09-30 15:13:05.845 DEBUG 11893 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/css/auth.css", parameters={}
+2021-09-30 15:13:05.847 DEBUG 11893 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2021-09-30 15:13:05.864 DEBUG 11893 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-09-30 15:13:05.978 DEBUG 11893 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2021-09-30 15:13:10.327 DEBUG 11893 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="login"]
+2021-09-30 15:13:10.788 DEBUG 11893 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.epam.final_project.controller.AppController#showHome(Model, Principal)
+2021-09-30 15:13:10.790 DEBUG 11893 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/app/home", parameters={}
+2021-09-30 15:13:10.790 DEBUG 11893 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.epam.final_project.controller.AppController#showHome(Model, Principal)
+2021-09-30 15:13:10.846 DEBUG 11893 --- [http-nio-8080-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2021-09-30 15:13:10.872 DEBUG 11893 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-09-30 15:13:10.899 DEBUG 11893 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/css/main.css", parameters={}
+2021-09-30 15:13:10.900 DEBUG 11893 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2021-09-30 15:13:10.902 DEBUG 11893 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-09-30 15:13:10.905 DEBUG 11893 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2021-09-30 15:13:10.906 DEBUG 11893 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/images/profile.png", parameters={}
+2021-09-30 15:13:10.907 DEBUG 11893 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2021-09-30 15:13:10.913 DEBUG 11893 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-09-30 15:13:10.948 DEBUG 11893 --- [http-nio-8080-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="login"]
+2021-09-30 15:13:10.948 DEBUG 11893 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2021-09-30 15:13:10.949 DEBUG 11893 --- [http-nio-8080-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="login"]
+2021-09-30 15:13:10.952 DEBUG 11893 --- [http-nio-8080-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/webp, */*]
+2021-09-30 15:13:10.957 DEBUG 11893 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-09-30 15:17:49.839  INFO 12320 --- [main] c.e.f.controller.AdminControllerTest     : Starting AdminControllerTest using Java 1.8.0_302 on andrii-aspire with PID 12320 (started by cowowner in /home/cowowner/IdeaProjects/springFinalProject)
+2021-09-30 15:17:49.847  INFO 12320 --- [main] c.e.f.controller.AdminControllerTest     : No active profile set, falling back to default profiles: default
+2021-09-30 15:17:49.886 DEBUG 12320 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@28d18df5
+2021-09-30 15:17:52.102  INFO 12320 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-30 15:17:52.215  INFO 12320 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 96 ms. Found 6 JPA repository interfaces.
+2021-09-30 15:17:55.158  INFO 12320 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-30 15:17:55.747  INFO 12320 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-30 15:17:58.239  INFO 12320 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 15:17:59.895  WARN 12320 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-30 15:18:01.189  INFO 12320 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/resources/**'] with []
+2021-09-30 15:18:01.189  INFO 12320 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/static/**'] with []
+2021-09-30 15:18:01.190  INFO 12320 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-09-30 15:18:01.529 DEBUG 12320 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 28 mappings in 'requestMappingHandlerMapping'
+2021-09-30 15:18:01.545  INFO 12320 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-09-30 15:18:01.567 DEBUG 12320 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/login] in 'viewControllerHandlerMapping'
+2021-09-30 15:18:01.787 DEBUG 12320 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-09-30 15:18:01.799  INFO 12320 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@31b6fb14, org.springframework.security.web.context.SecurityContextPersistenceFilter@3c6bd624, org.springframework.security.web.header.HeaderWriterFilter@2d801d8, org.springframework.web.filter.CorsFilter@3eee08f5, org.springframework.security.web.authentication.logout.LogoutFilter@4aab7195, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4ffa7041, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@645ba24a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@72f3f14c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@246df37b, org.springframework.security.web.session.SessionManagementFilter@2807cf3, org.springframework.security.web.access.ExceptionTranslationFilter@2299d903, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1ddf42dd]
+2021-09-30 15:18:02.119 DEBUG 12320 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-09-30 15:18:02.193 DEBUG 12320 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-09-30 15:18:02.564  INFO 12320 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-09-30 15:18:02.564  INFO 12320 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-09-30 15:18:02.566  INFO 12320 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2021-09-30 15:18:02.604  INFO 12320 --- [main] c.e.f.controller.AdminControllerTest     : Started AdminControllerTest in 13.497 seconds (JVM running for 15.479)
+2021-09-30 15:18:02.761 DEBUG 12320 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.epam.final_project.controller.AppController#showHome(Model, Principal)
+2021-09-30 15:18:02.870 DEBUG 12320 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@28d18df5, started on Thu Sep 30 15:17:49 EEST 2021
+2021-09-30 15:18:02.881  INFO 12320 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 15:18:02.886  INFO 12320 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-30 15:18:02.910  INFO 12320 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-30 15:20:19.100  INFO 12421 --- [main] c.e.f.controller.AdminControllerTest     : Starting AdminControllerTest using Java 1.8.0_302 on andrii-aspire with PID 12421 (started by cowowner in /home/cowowner/IdeaProjects/springFinalProject)
+2021-09-30 15:20:19.109  INFO 12421 --- [main] c.e.f.controller.AdminControllerTest     : No active profile set, falling back to default profiles: default
+2021-09-30 15:20:19.134 DEBUG 12421 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@28d18df5
+2021-09-30 15:20:20.692  INFO 12421 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-30 15:20:20.798  INFO 12421 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92 ms. Found 6 JPA repository interfaces.
+2021-09-30 15:20:22.252  INFO 12421 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-30 15:20:22.870  INFO 12421 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-30 15:20:24.482  INFO 12421 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 15:20:25.397  WARN 12421 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-30 15:20:26.107  INFO 12421 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/resources/**'] with []
+2021-09-30 15:20:26.108  INFO 12421 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/static/**'] with []
+2021-09-30 15:20:26.109  INFO 12421 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-09-30 15:20:26.412 DEBUG 12421 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 28 mappings in 'requestMappingHandlerMapping'
+2021-09-30 15:20:26.426  INFO 12421 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-09-30 15:20:26.456 DEBUG 12421 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/login] in 'viewControllerHandlerMapping'
+2021-09-30 15:20:26.716 DEBUG 12421 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-09-30 15:20:26.726  INFO 12421 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@df9d400, org.springframework.security.web.context.SecurityContextPersistenceFilter@1bec1589, org.springframework.security.web.header.HeaderWriterFilter@15e5246, org.springframework.web.filter.CorsFilter@4ec427, org.springframework.security.web.authentication.logout.LogoutFilter@58fbcb71, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@71fb8301, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@14590fe2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@542ff147, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c8d45cf, org.springframework.security.web.session.SessionManagementFilter@3c9e19de, org.springframework.security.web.access.ExceptionTranslationFilter@66b6873f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4db728df]
+2021-09-30 15:20:27.189 DEBUG 12421 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-09-30 15:20:27.307 DEBUG 12421 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-09-30 15:20:27.739  INFO 12421 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-09-30 15:20:27.740  INFO 12421 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-09-30 15:20:27.742  INFO 12421 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2021-09-30 15:20:27.774  INFO 12421 --- [main] c.e.f.controller.AdminControllerTest     : Started AdminControllerTest in 9.427 seconds (JVM running for 11.353)
+2021-09-30 15:20:27.935 DEBUG 12421 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.epam.final_project.controller.AppController#showHome(Model, Principal)
+2021-09-30 15:20:28.070 DEBUG 12421 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@28d18df5, started on Thu Sep 30 15:20:19 EEST 2021
+2021-09-30 15:20:28.092  INFO 12421 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 15:20:28.095  INFO 12421 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-30 15:20:28.122  INFO 12421 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-30 15:21:11.453  INFO 12509 --- [main] c.e.f.controller.AdminControllerTest     : Starting AdminControllerTest using Java 1.8.0_302 on andrii-aspire with PID 12509 (started by cowowner in /home/cowowner/IdeaProjects/springFinalProject)
+2021-09-30 15:21:11.457  INFO 12509 --- [main] c.e.f.controller.AdminControllerTest     : No active profile set, falling back to default profiles: default
+2021-09-30 15:21:11.510 DEBUG 12509 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@31920ade
+2021-09-30 15:21:12.886  INFO 12509 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-30 15:21:13.009  INFO 12509 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109 ms. Found 6 JPA repository interfaces.
+2021-09-30 15:21:14.576  INFO 12509 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-30 15:21:15.108  INFO 12509 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-30 15:21:16.662  INFO 12509 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 15:21:17.394  WARN 12509 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-30 15:21:18.064  INFO 12509 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/resources/**'] with []
+2021-09-30 15:21:18.065  INFO 12509 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/static/**'] with []
+2021-09-30 15:21:18.065  INFO 12509 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-09-30 15:21:18.423 DEBUG 12509 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 28 mappings in 'requestMappingHandlerMapping'
+2021-09-30 15:21:18.433  INFO 12509 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-09-30 15:21:18.455 DEBUG 12509 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/login] in 'viewControllerHandlerMapping'
+2021-09-30 15:21:18.648 DEBUG 12509 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-09-30 15:21:18.655  INFO 12509 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@18b04526, org.springframework.security.web.context.SecurityContextPersistenceFilter@298e002d, org.springframework.security.web.header.HeaderWriterFilter@f10d055, org.springframework.web.filter.CorsFilter@2fd4312a, org.springframework.security.web.authentication.logout.LogoutFilter@28fa541, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1224e1b6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c6bd624, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58fbcb71, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@31b6fb14, org.springframework.security.web.session.SessionManagementFilter@2d801d8, org.springframework.security.web.access.ExceptionTranslationFilter@14590fe2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@318e3942]
+2021-09-30 15:21:18.894 DEBUG 12509 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-09-30 15:21:18.959 DEBUG 12509 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-09-30 15:21:19.274  INFO 12509 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-09-30 15:21:19.274  INFO 12509 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-09-30 15:21:19.275  INFO 12509 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2021-09-30 15:21:19.304  INFO 12509 --- [main] c.e.f.controller.AdminControllerTest     : Started AdminControllerTest in 9.154 seconds (JVM running for 13.796)
+2021-09-30 15:21:19.442 DEBUG 12509 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.epam.final_project.controller.AppController#showHome(Model, Principal)
+2021-09-30 15:21:19.577 DEBUG 12509 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@31920ade, started on Thu Sep 30 15:21:11 EEST 2021
+2021-09-30 15:21:19.597  INFO 12509 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 15:21:19.601  INFO 12509 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-30 15:21:19.628  INFO 12509 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-30 15:27:09.309  INFO 12751 --- [main] c.e.f.controller.AdminControllerTest     : Starting AdminControllerTest using Java 1.8.0_302 on andrii-aspire with PID 12751 (started by cowowner in /home/cowowner/IdeaProjects/springFinalProject)
+2021-09-30 15:27:09.326  INFO 12751 --- [main] c.e.f.controller.AdminControllerTest     : No active profile set, falling back to default profiles: default
+2021-09-30 15:27:09.392 DEBUG 12751 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@28d18df5
+2021-09-30 15:27:12.240  INFO 12751 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-30 15:27:12.431  INFO 12751 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 176 ms. Found 6 JPA repository interfaces.
+2021-09-30 15:27:14.621  INFO 12751 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-30 15:27:15.871  INFO 12751 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-30 15:27:17.580  INFO 12751 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 15:27:18.504  WARN 12751 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-30 15:27:19.317  INFO 12751 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/resources/**'] with []
+2021-09-30 15:27:19.318  INFO 12751 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/static/**'] with []
+2021-09-30 15:27:19.318  INFO 12751 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-09-30 15:27:19.829 DEBUG 12751 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 28 mappings in 'requestMappingHandlerMapping'
+2021-09-30 15:27:19.895 DEBUG 12751 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/login] in 'viewControllerHandlerMapping'
+2021-09-30 15:27:20.148 DEBUG 12751 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-09-30 15:27:20.154  INFO 12751 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3cb04dd, org.springframework.security.web.context.SecurityContextPersistenceFilter@70139a81, org.springframework.security.web.header.HeaderWriterFilter@146f3d22, org.springframework.web.filter.CorsFilter@73d91faf, org.springframework.security.web.authentication.logout.LogoutFilter@3c6bd624, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@68a5aadd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15e5246, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14590fe2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@30fa8a6b, org.springframework.security.web.session.SessionManagementFilter@52285a5f, org.springframework.security.web.access.ExceptionTranslationFilter@1179fc8c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2d07aacc]
+2021-09-30 15:27:20.509 DEBUG 12751 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-09-30 15:27:20.590 DEBUG 12751 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-09-30 15:27:21.085  INFO 12751 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-09-30 15:27:21.088  INFO 12751 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-09-30 15:27:21.090  INFO 12751 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 2 ms
+2021-09-30 15:27:21.152  INFO 12751 --- [main] c.e.f.controller.AdminControllerTest     : Started AdminControllerTest in 12.579 seconds (JVM running for 14.208)
+2021-09-30 15:27:21.326 DEBUG 12751 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.epam.final_project.controller.AppController#showHome(Model, Principal)
+2021-09-30 15:27:21.498 DEBUG 12751 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@28d18df5, started on Thu Sep 30 15:27:09 EEST 2021
+2021-09-30 15:27:21.551  INFO 12751 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 15:27:21.566  INFO 12751 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-30 15:27:21.627  INFO 12751 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-30 15:32:22.047  INFO 13460 --- [main] c.e.f.controller.AdminControllerTest     : Starting AdminControllerTest using Java 1.8.0_302 on andrii-aspire with PID 13460 (started by cowowner in /home/cowowner/IdeaProjects/springFinalProject)
+2021-09-30 15:32:22.065  INFO 13460 --- [main] c.e.f.controller.AdminControllerTest     : No active profile set, falling back to default profiles: default
+2021-09-30 15:32:22.107 DEBUG 13460 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@28d18df5
+2021-09-30 15:32:26.287  INFO 13460 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-30 15:32:26.405  INFO 13460 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99 ms. Found 6 JPA repository interfaces.
+2021-09-30 15:32:29.057  INFO 13460 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-30 15:32:29.796  INFO 13460 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-30 15:32:32.160  INFO 13460 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 15:32:33.466  WARN 13460 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-30 15:32:34.354  INFO 13460 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/resources/**'] with []
+2021-09-30 15:32:34.355  INFO 13460 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/static/**'] with []
+2021-09-30 15:32:34.355  INFO 13460 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure Ant [pattern='/css/**'] with []
+2021-09-30 15:32:34.728 DEBUG 13460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 28 mappings in 'requestMappingHandlerMapping'
+2021-09-30 15:32:34.776 DEBUG 13460 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/login] in 'viewControllerHandlerMapping'
+2021-09-30 15:32:35.034 DEBUG 13460 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-09-30 15:32:35.040  INFO 13460 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6b751cb1, org.springframework.security.web.context.SecurityContextPersistenceFilter@6115846e, org.springframework.security.web.header.HeaderWriterFilter@60f9dc7e, org.springframework.web.filter.CorsFilter@df9d400, org.springframework.security.web.authentication.logout.LogoutFilter@536da29c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@c94bd18, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@57f0bfc3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f10d055, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4ec427, org.springframework.security.web.session.SessionManagementFilter@503556cb, org.springframework.security.web.access.ExceptionTranslationFilter@146f3d22, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1c90029b]
+2021-09-30 15:32:35.375 DEBUG 13460 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-09-30 15:32:35.461 DEBUG 13460 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-09-30 15:32:36.168  INFO 13460 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-09-30 15:32:36.168  INFO 13460 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-09-30 15:32:36.171  INFO 13460 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2021-09-30 15:32:36.206  INFO 13460 --- [main] c.e.f.controller.AdminControllerTest     : Started AdminControllerTest in 14.833 seconds (JVM running for 16.61)
+2021-09-30 15:32:36.402 DEBUG 13460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.epam.final_project.controller.AppController#showHome(Model, Principal)
+2021-09-30 15:32:36.453 DEBUG 13460 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.epam.final_project.controller.AppController#showHome(Model, Principal)
+2021-09-30 15:32:37.552 DEBUG 13460 --- [main] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2021-09-30 15:32:38.330 DEBUG 13460 --- [SpringApplicationShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@28d18df5, started on Thu Sep 30 15:32:22 EEST 2021
+2021-09-30 15:32:38.340  INFO 13460 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 15:32:38.344  INFO 13460 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-30 15:32:38.364  INFO 13460 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-30 15:40:36.936  INFO 11893 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-30 15:40:36.939  INFO 11893 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-30 15:40:36.950  INFO 11893 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

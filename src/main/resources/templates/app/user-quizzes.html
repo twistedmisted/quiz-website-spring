@@ -3,7 +3,7 @@
       xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link th:href="@{/css/main.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/css/main.css}" rel="stylesheet" type="text/css"/>
     <title>GmOwl</title>
 </head>
 <body>
@@ -26,12 +26,12 @@
             <div th:text="#{about}"></div>
         </a>
         <div class="dropdown">
-            <img class="profile-icon" th:src="@{/images/profile.png}" alt="profile icon">
+            <img class="profile-icon" th:src="@{/images/profile.png}" alt="profile icon"/>
             <div class="dropdown-content">
                 <a href="/admin/home" sec:authorize="hasAuthority('admin')" th:text="#{admin}"></a>
                 <a href="/app/profile" th:text="#{profile}"></a>
                 <form class="logout" th:action="@{/logout}" method="post">
-                    <input type="submit" th:value="#{log-out}">
+                    <input type="submit" th:value="#{log-out}"/>
                 </form>
             </div>
         </div>

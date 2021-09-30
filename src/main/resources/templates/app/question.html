@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
-      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
 <head>
     <title th:text="#{questionRequest}"></title>
 
@@ -151,7 +150,7 @@
         <textarea id="timer" name="timer" class="timer" th:text="${seconds}" disabled></textarea>
         <p class="prompt" th:text="${page.content.get(0).prompt}"></p>
         <div th:each="variant : ${page.content.get(0).variants}">
-            <input name="answer" class="checkbox" type="checkbox" id="input-answer" value="input-answer">
+            <input name="answer" class="checkbox" type="checkbox" id="input-answer" value="input-answer"/>
             <label for="input-answer" id="answer" class="variants" th:text="${variant.option}"></label>
             <script>
                 getLetter();

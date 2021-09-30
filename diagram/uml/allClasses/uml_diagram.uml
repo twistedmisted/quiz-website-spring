@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/home/cowowner/IdeaProjects/epamServletProject/src/main/java/com/epam/final_project</OriginalElement>
+  <nodes>
+    <node x="10412.0" y="1623.0">com.epam.final_project.app.commands.user.QuizCommand</node>
+    <node x="1187.0" y="398.0">com.epam.final_project.dao.entity.QuestionDAO</node>
+    <node x="9961.0" y="1623.0">com.epam.final_project.app.commands.admin.UnblockUserCommand</node>
+    <node x="393.0" y="1946.0">com.epam.final_project.dao.model.Quiz</node>
+    <node x="5000.0" y="1623.0">com.epam.final_project.app.commands.admin.DeleteQuizCommand</node>
+    <node x="1639.0" y="1946.0">com.epam.final_project.dao.DbManager</node>
+    <node x="7706.0" y="1623.0">com.epam.final_project.app.commands.user.UserQuizzesCommand</node>
+    <node x="0.0" y="1946.0">com.epam.final_project.dao.model.User</node>
+    <node x="4549.0" y="1587.0">com.epam.final_project.app.commands.admin.DeleteQuestionCommand</node>
+    <node x="6173.0" y="1946.0">com.epam.final_project.exception.NotFoundCommandException</node>
+    <node x="2744.9999999999995" y="1599.0">com.epam.final_project.app.commands.admin.EditQuizCommand</node>
+    <node x="3195.9999999999995" y="1635.5">com.epam.final_project.app.commands.admin.AdminCommand</node>
+    <node x="1962.0" y="1946.0">com.epam.final_project.app.web.Page</node>
+    <node x="375.00000000000006" y="206.0">com.epam.final_project.dao.entity.QuizDAO</node>
+    <node x="6353.0" y="1623.0">com.epam.final_project.app.commands.admin.BlockUserCommand</node>
+    <node x="807.0" y="350.0">com.epam.final_project.dao.entity.UserDAO</node>
+    <node x="2231.0" y="2080.0">com.epam.final_project.exception.NotSupportedActionException</node>
+    <node x="2256.5" y="1946.0">com.epam.final_project.exception.DbException</node>
+    <node x="9510.0" y="1599.0">com.epam.final_project.app.commands.user.RegistrationCommand</node>
+    <node x="708.5" y="0.0">com.epam.final_project.dao.entity.DAO</node>
+    <node x="6804.0" y="1599.0">com.epam.final_project.app.commands.admin.EditUserCommand</node>
+    <node x="1842.9999999999995" y="1623.0">com.epam.final_project.app.commands.user.HomeCommand</node>
+    <node x="1364.9999999999995" y="1611.0">com.epam.final_project.app.commands.admin.AddQuestionCommand</node>
+    <node x="4098.0" y="1635.5">com.epam.final_project.app.commands.user.ShowQuestionCommand</node>
+    <node x="8608.0" y="1623.0">com.epam.final_project.app.commands.admin.DeleteUserCommand</node>
+    <node x="3810.0" y="1946.0">com.epam.final_project.app.filters.LocalizationFilter</node>
+    <node x="463.0" y="1635.5">com.epam.final_project.app.commands.user.LogOutCommand</node>
+    <node x="6602.0" y="1946.0">com.epam.final_project.exception.NoSuchArgumentException</node>
+    <node x="762.0" y="1946.0">com.epam.final_project.dao.model.Question</node>
+    <node x="0.0" y="518.0">com.epam.final_project.dao.entity.VariantsDAO</node>
+    <node x="2593.0" y="1946.0">com.epam.final_project.utils.Constants</node>
+    <node x="914.0" y="1611.0">com.epam.final_project.app.commands.admin.ShowQuestionsCommand</node>
+    <node x="5451.0" y="1623.0">com.epam.final_project.app.commands.user.AllQuizzesCommand</node>
+    <node x="5954.0" y="1946.0">com.epam.final_project.test.Test</node>
+    <node x="1686.0" y="0.0">com.epam.final_project.app.commands.Commands</node>
+    <node x="5283.0" y="1946.0">com.epam.final_project.app.commands.CommandsFactory</node>
+    <node x="5225.5" y="1345.0">com.epam.final_project.app.commands.Command</node>
+    <node x="1276.0" y="1946.0">com.epam.final_project.dao.entity.AnswersDAO</node>
+    <node x="2293.9999999999995" y="1599.0">com.epam.final_project.app.commands.admin.ShowQuizzesCommand</node>
+    <node x="8157.0" y="1455.0">com.epam.final_project.app.commands.user.DoQuizCommand</node>
+    <node x="7255.0" y="1599.0">com.epam.final_project.app.commands.admin.ShowUsersCommand</node>
+    <node x="4301.0" y="1946.0">com.epam.final_project.app.filters.AuthenticationFilter</node>
+    <node x="4792.0" y="1946.0">com.epam.final_project.app.filters.AdminFilter</node>
+    <node x="9059.0" y="1635.5">com.epam.final_project.app.commands.user.AboutCommand</node>
+    <node x="2815.0" y="1946.0">com.epam.final_project.app.web.FrontController</node>
+    <node x="3646.9999999999995" y="1623.0">com.epam.final_project.app.commands.user.ProfileCommand</node>
+    <node x="3342.0" y="1946.0">com.epam.final_project.test.TestServlet</node>
+    <node x="5683.0" y="1946.0">com.epam.final_project.utils.PasswordEncryption</node>
+    <node x="5902.0" y="1599.0">com.epam.final_project.app.commands.user.LogInCommand</node>
+    <node x="0.0" y="1599.0">com.epam.final_project.app.commands.admin.AddQuizCommand</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.epam.final_project.app.commands.admin.EditQuizCommand" target="com.epam.final_project.app.commands.Command" relationship="REALIZATION">
+      <point x="0.0" y="-79.0" />
+      <point x="2960.4999999999995" y="1430.0" />
+      <point x="5441.0" y="1430.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.epam.final_project.app.commands.admin.DeleteQuestionCommand" target="com.epam.final_project.app.commands.Command" relationship="REALIZATION">
+      <point x="0.0" y="-91.0" />
+      <point x="4764.5" y="1430.0" />
+      <point x="5441.0" y="1430.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.epam.final_project.app.commands.user.QuizCommand" target="com.epam.final_project.app.commands.Command" relationship="REALIZATION">
+      <point x="0.0" y="-55.0" />
+      <point x="10627.5" y="1430.0" />
+      <point x="5441.0" y="1430.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.epam.final_project.app.commands.user.AllQuizzesCommand" target="com.epam.final_project.app.commands.Command" relationship="REALIZATION">
+      <point x="0.0" y="-55.0" />
+      <point x="5666.5" y="1430.0" />
+      <point x="5441.0" y="1430.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.epam.final_project.dao.entity.UserDAO" target="com.epam.final_project.dao.entity.DAO" relationship="REALIZATION">
+      <point x="0.0" y="-403.0" />
+      <point x="987.0" y="181.0" />
+      <point x="784.0" y="181.0" />
+      <point x="0.0" y="78.0" />
+    </edge>
+    <edge source="com.epam.final_project.dao.entity.QuizDAO" target="com.epam.final_project.dao.entity.DAO" relationship="REALIZATION">
+      <point x="0.0" y="-547.0" />
+      <point x="581.0" y="181.0" />
+      <point x="784.0" y="181.0" />
+      <point x="0.0" y="78.0" />
+    </edge>
+    <edge source="com.epam.final_project.app.commands.user.ProfileCommand" target="com.epam.final_project.app.commands.Command" relationship="REALIZATION">
+      <point x="0.0" y="-55.0" />
+      <point x="3862.4999999999995" y="1430.0" />
+      <point x="5441.0" y="1430.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.epam.final_project.app.commands.user.DoQuizCommand" target="com.epam.final_project.app.commands.Command" relationship="REALIZATION">
+      <point x="0.0" y="-223.0" />
+      <point x="8372.5" y="1430.0" />
+      <point x="5441.0" y="1430.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.epam.final_project.app.commands.admin.EditUserCommand" target="com.epam.final_project.app.commands.Command" relationship="REALIZATION">
+      <point x="0.0" y="-79.0" />
+      <point x="7019.5" y="1430.0" />
+      <point x="5441.0" y="1430.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.epam.final_project.app.commands.admin.BlockUserCommand" target="com.epam.final_project.app.commands.Command" relationship="REALIZATION">
+      <point x="0.0" y="-55.0" />
+      <point x="6568.5" y="1430.0" />
+      <point x="5441.0" y="1430.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.epam.final_project.app.commands.user.HomeCommand" target="com.epam.final_project.app.commands.Command" relationship="REALIZATION">
+      <point x="0.0" y="-55.0" />
+      <point x="2058.4999999999995" y="1430.0" />
+      <point x="5441.0" y="1430.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.epam.final_project.app.commands.admin.ShowQuestionsCommand" target="com.epam.final_project.app.commands.Command" relationship="REALIZATION">
+      <point x="0.0" y="-67.0" />
+      <point x="1129.5" y="1430.0" />
+      <point x="5441.0" y="1430.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.epam.final_project.app.commands.user.RegistrationCommand" target="com.epam.final_project.app.commands.Command" relationship="REALIZATION">
+      <point x="0.0" y="-79.0" />
+      <point x="9725.5" y="1430.0" />
+      <point x="5441.0" y="1430.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.epam.final_project.app.commands.admin.ShowQuizzesCommand" target="com.epam.final_project.app.commands.Command" relationship="REALIZATION">
+      <point x="0.0" y="-79.0" />
+      <point x="2509.4999999999995" y="1430.0" />
+      <point x="5441.0" y="1430.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.epam.final_project.dao.entity.QuestionDAO" target="com.epam.final_project.dao.entity.DAO" relationship="REALIZATION">
+      <point x="0.0" y="-355.0" />
+      <point x="1414.0" y="181.0" />
+      <point x="784.0" y="181.0" />
+      <point x="0.0" y="78.0" />
+    </edge>
+    <edge source="com.epam.final_project.app.commands.user.LogOutCommand" target="com.epam.final_project.app.commands.Command" relationship="REALIZATION">
+      <point x="0.0" y="-42.5" />
+      <point x="678.5" y="1430.0" />
+      <point x="5441.0" y="1430.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.epam.final_project.app.commands.admin.ShowUsersCommand" target="com.epam.final_project.app.commands.Command" relationship="REALIZATION">
+      <point x="0.0" y="-79.0" />
+      <point x="7470.5" y="1430.0" />
+      <point x="5441.0" y="1430.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.epam.final_project.exception.NotSupportedActionException" target="com.epam.final_project.exception.DbException" relationship="GENERALIZATION">
+      <point x="0.0" y="-30.0" />
+      <point x="0.0" y="42.0" />
+    </edge>
+    <edge source="com.epam.final_project.app.commands.admin.DeleteUserCommand" target="com.epam.final_project.app.commands.Command" relationship="REALIZATION">
+      <point x="0.0" y="-55.0" />
+      <point x="8823.5" y="1430.0" />
+      <point x="5441.0" y="1430.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.epam.final_project.app.commands.user.AboutCommand" target="com.epam.final_project.app.commands.Command" relationship="REALIZATION">
+      <point x="0.0" y="-42.5" />
+      <point x="9274.5" y="1430.0" />
+      <point x="5441.0" y="1430.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.epam.final_project.app.commands.user.ShowQuestionCommand" target="com.epam.final_project.app.commands.Command" relationship="REALIZATION">
+      <point x="0.0" y="-42.5" />
+      <point x="4313.5" y="1430.0" />
+      <point x="5441.0" y="1430.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.epam.final_project.app.commands.admin.AdminCommand" target="com.epam.final_project.app.commands.Command" relationship="REALIZATION">
+      <point x="0.0" y="-42.5" />
+      <point x="3411.4999999999995" y="1430.0" />
+      <point x="5441.0" y="1430.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.epam.final_project.app.commands.admin.AddQuestionCommand" target="com.epam.final_project.app.commands.Command" relationship="REALIZATION">
+      <point x="0.0" y="-67.0" />
+      <point x="1593.9999999999995" y="1430.0" />
+      <point x="5441.0" y="1430.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.epam.final_project.app.commands.user.UserQuizzesCommand" target="com.epam.final_project.app.commands.Command" relationship="REALIZATION">
+      <point x="0.0" y="-55.0" />
+      <point x="7921.5" y="1430.0" />
+      <point x="5441.0" y="1430.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.epam.final_project.dao.entity.VariantsDAO" target="com.epam.final_project.dao.entity.DAO" relationship="REALIZATION">
+      <point x="0.0" y="-235.0" />
+      <point x="177.5" y="181.0" />
+      <point x="784.0" y="181.0" />
+      <point x="0.0" y="78.0" />
+    </edge>
+    <edge source="com.epam.final_project.app.commands.admin.AddQuizCommand" target="com.epam.final_project.app.commands.Command" relationship="REALIZATION">
+      <point x="0.0" y="-79.0" />
+      <point x="221.5" y="1430.0" />
+      <point x="5441.0" y="1430.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.epam.final_project.app.commands.user.LogInCommand" target="com.epam.final_project.app.commands.Command" relationship="REALIZATION">
+      <point x="0.0" y="-79.0" />
+      <point x="6117.5" y="1430.0" />
+      <point x="5441.0" y="1430.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.epam.final_project.app.commands.admin.UnblockUserCommand" target="com.epam.final_project.app.commands.Command" relationship="REALIZATION">
+      <point x="0.0" y="-55.0" />
+      <point x="10176.5" y="1430.0" />
+      <point x="5441.0" y="1430.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="com.epam.final_project.app.commands.admin.DeleteQuizCommand" target="com.epam.final_project.app.commands.Command" relationship="REALIZATION">
+      <point x="0.0" y="-55.0" />
+      <point x="5215.5" y="1430.0" />
+      <point x="5441.0" y="1430.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.3266685077786984" showDependencies="false" x="545.5268672458297" y="2235.069950595354" />
+  <SelectedNodes>
+    <node>com.epam.final_project.dao.entity.QuestionDAO</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

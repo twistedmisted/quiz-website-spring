@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
-      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
 <head>
     <title th:text="${quiz.getName()}"></title>
     <style>
@@ -85,7 +84,8 @@
     </p>
     <div class="btns">
         <a href="/app/home" class="btn" th:text="#{back}"></a>
-        <a th:href="@{/app/quiz/{id}/question/{index}(id=${quiz.getId()}, index=1)}" class="btn" th:text="#{start}" th:if="${score == null}"></a>
+        <a th:href="@{/app/quiz/{id}/question/{index}(id=${quiz.getId()}, index=1)}" class="btn" th:text="#{start}"
+           th:if="${score == null}"></a>
     </div>
 </div>
 </body>
