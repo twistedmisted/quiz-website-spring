@@ -20,7 +20,7 @@ public class ApplicationConfig implements WebMvcConfigurer {
     @Bean
     public MessageSource messageSource() {
         ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
-        messageSource.setBasename("classpath:/locale/messages");
+        messageSource.setBasenames("classpath:/locale/messages", "classpath:/locale/error");
         messageSource.setDefaultEncoding("UTF-8");
         return messageSource;
     }

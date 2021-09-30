@@ -6,52 +6,50 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.test.context.support.WithMockUser;
-import org.springframework.test.context.TestPropertySource;
-import org.springframework.test.context.jdbc.Sql;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
+
+import javax.servlet.RequestDispatcher;
 
 import static org.springframework.security.test.web.servlet.response.SecurityMockMvcResultMatchers.authenticated;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.xpath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest
 @AutoConfigureMockMvc
+@SpringBootTest
 @WithMockUser(username = "user", password = "user", authorities = "user")
-@TestPropertySource("/application-test.properties")
-@Sql(value = {"/create-quiz-before.sql", "/create-user-before.sql"},
-        executionPhase = Sql.ExecutionPhase.BEFORE_TEST_METHOD)
-@Sql(value = {"/create-quiz-after.sql", "/create-user-after.sql"},
-        executionPhase = Sql.ExecutionPhase.AFTER_TEST_METHOD)
-public class AppControllerTest {
+public class MyErrorControllerTest {
 
     @Autowired
     private MockMvc mockMvc;
 
     @Test
-    public void homePageTest() throws Exception {
-        this.mockMvc.perform(get("/app/home"))
+    public void handleErrorTest_statusCode400() throws Exception {
+        this.mockMvc.perform(get("/error").requestAttr(RequestDispatcher.ERROR_STATUS_CODE, "404"))
                 .andDo(print())
                 .andExpect(authenticated())
-                .andExpect(xpath("/html/body/div/div[4]/p").string("My quizzes"));
+                .andExpect(xpath("/html/body/h2")
+                        .string("Page not found. Check your link."));
     }
 
     @Test
-    public void showAllQuizzesTest_sortByName() throws Exception {
-        this.mockMvc.perform(get("/app/all-quizzes").param("sortBy", "name"))
+    public void handleErrorTest_statusCode500() throws Exception {
+        this.mockMvc.perform(get("/error").requestAttr(RequestDispatcher.ERROR_STATUS_CODE, "500"))
                 .andDo(print())
                 .andExpect(authenticated())
-                .andExpect(xpath("/html/body/div/div[3]/div[2]/a").nodeCount(2));
+                .andExpect(xpath("/html/body/h2")
+                        .string("Sorry, but we can't do that right now."));
     }
 
     @Test
-    public void showAllQuizzesTest_sortBySubject() throws Exception {
-        this.mockMvc.perform(get("/app/all-quizzes").param("sortBy", "Java"))
+    public void handleErrorTest_withoutStatusCode() throws Exception {
+        this.mockMvc.perform(get("/error"))
                 .andDo(print())
                 .andExpect(authenticated())
-                .andExpect(xpath("/html/body/div/div[3]/div[2]/a").nodeCount(1));
+                .andExpect(xpath("/html/body/h2")
+                        .string("Our Engineers are on it. Try again later."));
     }
 
 }

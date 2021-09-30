@@ -17,13 +17,13 @@ public class MyErrorController implements ErrorController {
         if (status != null) {
             int statusCode = Integer.parseInt(status.toString());
             if(statusCode == HttpStatus.NOT_FOUND.value()) {
-                return "error";
+                return "/error/error-400";
             }
             else if(statusCode == HttpStatus.INTERNAL_SERVER_ERROR.value()) {
-                return "error";
+                return "/error/error-500";
             }
         }
-        return "error";
+        return "/error/error";
     }
 
 }

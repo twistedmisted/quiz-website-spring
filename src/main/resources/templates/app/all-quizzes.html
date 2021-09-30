@@ -52,21 +52,21 @@
             <div class="sort">
                 <label class="label-select" for="sort-select" th:text="#{sort-by}">:</label>
                 <select class="select" name="sortVal" id="sort-select">
-                    <option th:if="${sortBy == 'name'}" th:text="#{name}" value="name" selected></option>
+                    <option th:if="${sortBy == 'name'}" th:text="#{name}" value="name" selected="selected"></option>
                     <option th:unless="${sortBy == 'name'}" th:text="#{name}" value="name"></option>
 
                     <option th:if="${sortBy == 'difficulty'}" th:text="#{difficulty}" value="difficulty"
-                            selected></option>
+                            selected="selected"></option>
                     <option th:unless="${sortBy == 'difficulty'}" th:text="#{difficulty}" value="difficulty"></option>
 
                     <option th:if="${sortBy == 'questions'}" th:text="#{questionRequest}" value="questions"
-                            selected></option>
+                            selected="selected"></option>
                     <option th:unless="${sortBy == 'questions'}" th:text="#{questionRequest}"
                             value="questions"></option>
 
                     <th:block th:each="subject : ${subjects}">
                         <option th:if="${sortBy == subject}" th:value="${subject}" th:text="${subject}"
-                                selected></option>
+                                selected="selected"></option>
                         <option th:unless="${sortBy == subject}" th:value="${subject}" th:text="${subject}"></option>
                     </th:block>
                 </select>
