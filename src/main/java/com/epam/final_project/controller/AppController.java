@@ -42,6 +42,11 @@ public class AppController {
         return "/app/user-quizzes";
     }
 
+    @GetMapping("/about")
+    public String showAbout() {
+        return "/app/about";
+    }
+
     @GetMapping("/profile")
     public String showProfile(Model model, Principal principal) {
         userService.showProfile(model, principal);
