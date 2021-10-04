@@ -68,6 +68,34 @@ body a {
     padding: 10px;
 }
 
+.center {
+    text-align: center;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: white;
+    float: left;
+    padding: 8px 16px;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 10px 4px;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
 .logout-form {
     text-align: center;
 }

@@ -35,14 +35,21 @@
         </tr>
         </tbody>
     </table>
-    <div class="btns" th:with="currentPage=${userPage.number + 1}">
-        <a th:if="${currentPage > 1}" class="element btn"
-           th:href="@{/admin/users(page=${currentPage - 1})}" th:text="#{back}"></a>
-        <a th:unless="${currentPage > 1}" class="element btn disabled" th:text="#{back}"></a>
-        <p class="element" th:text="${currentPage}"></p>
-        <a th:if="${currentPage < userPage.totalPages}" class="element btn"
-           th:href="@{/admin/users(page=${currentPage + 1})}" th:text="#{next}"></a>
-        <a th:unless="${currentPage < userPage.totalPages}" class="element btn disabled" th:text="#{next}"></a>
+    <div class="center">
+        <div class="pagination">
+            <a th:if="${userPage.number + 1 != 1}"
+               th:href="@{/admin/users(page=${userPage.number})}">&laquo;</a>
+            <a th:unless="${userPage.number + 1 != 1}" class="page-link disabled" href="#">&laquo;</a>
+            <th:block th:each="i : ${#numbers.sequence(1, userPage.totalPages)}">
+                <a class="active" th:if="${userPage.number + 1 == i}"
+                   th:href="@{/admin/users(page=${i})}" th:text="${i}"></a>
+                <a th:unless="${userPage.number + 1 == i}"
+                   th:href="@{/admin/users(page=${i})}" th:text="${i}"></a>
+            </th:block>
+            <a th:if="${userPage.number + 1 != userPage.totalPages}"
+               th:href="@{/admin/users(page=${userPage.number + 2})}">&raquo;</a>
+            <a th:unless="${userPage.number + 1 != userPage.totalPages}" class="page-link disabled" href="#">&raquo;</a>
+        </div>
     </div>
     <div class="btns">
         <a class="btn" href="/admin/home" th:text="#{admin}"></a>
