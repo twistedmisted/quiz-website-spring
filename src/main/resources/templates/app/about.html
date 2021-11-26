@@ -39,7 +39,7 @@
         <div class="dropdown">
             <img class="profile-icon" th:src="@{/images/profile.png}" alt="profile icon"/>
             <div class="dropdown-content">
-                <a href="/admin/home" sec:authorize="hasAuthority('admin')" th:text="#{admin}"></a>
+                <a href="/admin/home" sec:authorize="hasAuthority('ADMIN')" th:text="#{admin}"></a>
                 <a href="/app/profile" th:text="#{profile}"></a>
                 <form class="logout" th:action="@{/logout}" method="post">
                     <input type="submit" th:value="#{log-out}"/>

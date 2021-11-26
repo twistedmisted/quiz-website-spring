@@ -55,11 +55,7 @@ public class QuestionService {
     }
 
     public List<QuestionEntity> getAllByQuizId(long id) throws NotFoundException {
-        List<QuestionEntity> questions = questionRepository.findAllByQuizIdId(id);
-        if (questions.isEmpty()) {
-            throw new NotFoundException("Can not to get list of quizzes");
-        }
-        return questions;
+        return questionRepository.findAllByQuizIdId(id);
     }
 
     public String addQuestion(long id, Question question) {

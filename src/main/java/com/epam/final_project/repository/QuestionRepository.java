@@ -12,8 +12,6 @@ public interface QuestionRepository extends CrudRepository<QuestionEntity, Long>
 
     QuestionEntity save(QuestionEntity question);
 
-    Optional<QuestionEntity> findById(long id);
-
     List<QuestionEntity> findAllByQuizIdId(long id);
 
     Page<QuestionEntity> findAllByQuizIdId(long id, Pageable pageable);

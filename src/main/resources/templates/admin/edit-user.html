@@ -92,10 +92,10 @@
 
         <div class="element">
             <label for="access-level" th:text="#{access-level}"></label>
-            <select name="access-level" id="access-level" th:field="*{accessLevel}">
-                <option value="user" th:text="#{access-level.user}"></option>
-                <option value="admin" th:text="#{access-level.admin}"></option>
-                <option value="banned" th:text="#{access-level.banned}"></option>
+            <select name="access-level" id="access-level" th:field="*{role}">
+                <option value="USER" th:text="#{access-level.user}"></option>
+                <option value="ADMIN" th:text="#{access-level.admin}"></option>
+                <option value="BANNED" th:text="#{access-level.banned}"></option>
             </select>
         </div>
         <div class="btns">

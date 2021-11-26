@@ -42,7 +42,7 @@ public class CustomSuccessHandler extends SimpleUrlAuthenticationSuccessHandler 
     }
 
     private boolean isBanned(List<String> roles) {
-        return roles.contains("banned");
+        return roles.contains("BANNED");
     }
 
     public void setRedirectStrategy(RedirectStrategy redirectStrategy) {

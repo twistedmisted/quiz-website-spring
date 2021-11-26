@@ -24,12 +24,10 @@ public class MySQLUserDetailsService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String login) throws UsernameNotFoundException {
-        System.out.println(userRepository.findByLogin(login));
         UserEntity user = userRepository.findByLogin(login).
                 orElseThrow(() -> new UsernameNotFoundException("User not found"));
-        System.out.println("USER");
-        List<SimpleGrantedAuthority> authorities = Arrays.asList(new SimpleGrantedAuthority(user.getAccessLevel()));
-        System.out.println("HERE");
+        String role = String.valueOf(user.getRole().getRoleType());
+        List<SimpleGrantedAuthority> authorities = Arrays.asList(new SimpleGrantedAuthority(role));
         return new User(user.getLogin(), user.getPassword(), authorities);
     }
 }

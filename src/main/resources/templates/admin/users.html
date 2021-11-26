@@ -21,12 +21,12 @@
         <tr th:each="user : ${userPage.content}">
             <td th:text="${user.getLogin()}">login</td>
             <td th:text="${user.getEmail()}">email</td>
-            <td th:text="${user.getAccessLevel()}">accessLevel</td>
+            <td th:text="${user.getRole().getRoleType()}">accessLevel</td>
             <td><a th:href="@{/admin/users/edit/{id}(id=${user.id})}">Edit</a></td>
             <td>
-                <a th:if="${user.getAccessLevel() != 'banned'}"
+                <a th:if="${user.getRole().getRoleType().toString() != 'BANNED'}"
                    th:href="@{/admin/users/block/{id}(id=${user.getId()})}">Block</a>
-                <a th:unless="${user.getAccessLevel() != 'banned'}"
+                <a th:unless="${user.getRole().getRoleType().toString() != 'BANNED'}"
                    th:href="@{/admin/users/unblock/{id}(id=${user.getId()})}">Unblock</a>
             </td>
             <td>

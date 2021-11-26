@@ -38,7 +38,7 @@
         <div class="dropdown">
             <img class="profile-icon" th:src="@{/images/profile.png}" alt="profile icon"/>
             <div class="dropdown-content">
-                <a href="/admin/home" sec:authorize="hasAuthority('admin')" th:text="#{admin}"></a>
+                <a href="/admin/home" sec:authorize="hasAuthority('ADMIN')" th:text="#{admin}"></a>
                 <a href="/app/profile" th:text="#{profile}"></a>
                 <form class="logout" th:action="@{/logout}" method="post">
                     <input type="submit" th:value="#{log-out}"/>
@@ -59,15 +59,10 @@
                             selected="selected"></option>
                     <option th:unless="${sortBy == 'difficulty'}" th:text="#{difficulty}" value="difficulty"></option>
 
-                    <option th:if="${sortBy == 'questions'}" th:text="#{questionRequest}" value="questions"
-                            selected="selected"></option>
-                    <option th:unless="${sortBy == 'questions'}" th:text="#{questionRequest}"
-                            value="questions"></option>
-
-                    <th:block th:each="subject : ${subjects}">
-                        <option th:if="${sortBy == subject}" th:value="${subject}" th:text="${subject}"
+                    <th:block th:each="category : ${categories}">
+                        <option th:if="${sortBy == category.name}" th:value="${category.name}" th:text="${category.name}"
                                 selected="selected"></option>
-                        <option th:unless="${sortBy == subject}" th:value="${subject}" th:text="${subject}"></option>
+                        <option th:unless="${sortBy == category.name}" th:value="${category.name}" th:text="${category.name}"></option>
                     </th:block>
                 </select>
             </div>
@@ -77,7 +72,7 @@
                style="text-decoration: none">
                 <div>
                     <p class="quiz-title" th:text="${quiz.getName()}"></p>
-                    <p class="quiz-difficulty" th:text="${quiz.getDifficulty()}"></p>
+                    <p class="quiz-difficulty" th:text="${quiz.getDifficulty().name}"></p>
                     <p class="quiz-time" th:text="${quiz.getTime()}"></p>
                 </div>
             </a>

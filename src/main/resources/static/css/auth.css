@@ -14,7 +14,7 @@ body {
 
 .reg {
     width: 400px;
-    height: 700px;
+    height: 510px;
 }
 
 
@@ -48,9 +48,9 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
-form.form1 {
-    padding-top: 40px;
-}
+/*form.form1 {*/
+/*    padding-top: 40px;*/
+/*}*/
 
 .pass {
     display: flex;

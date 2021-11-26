@@ -15,7 +15,7 @@
             <th id="name" th:text="#{name}"></th>
             <th id="time" th:text="#{time}"></th>
             <th id="difficulty" th:text="#{difficulty}"></th>
-            <th id="subject" th:text="#{subject}"></th>
+            <th id="subject" th:text="#{category}"></th>
             <th id="questions" th:text="#{questions}"></th>
             <th id="actions" th:text="#{actions}" colspan="2"></th>
         </tr>
@@ -23,8 +23,8 @@
             <tr>
                 <td th:text="${quiz.name}">name</td>
                 <td th:text="${quiz.time}">time</td>
-                <td th:text="${quiz.difficulty}">difficulty</td>
-                <td th:text="${quiz.subject}">subject</td>
+                <td th:text="${quiz.difficulty.name}">difficulty</td>
+                <td th:text="${quiz.category.name}">subject</td>
                 <td>
                     <a th:href="@{/admin/quizzes/{id}/questions(id=${quiz.id})}" th:text="#{list-questions}"></a>
                 </td>

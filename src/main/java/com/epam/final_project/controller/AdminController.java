@@ -48,13 +48,13 @@ public class AdminController {
 
     @GetMapping( "/users/block/{id}")
     public String blockUser(@PathVariable("id") long id) {
-        userService.updateAccessLevel(id, "banned");
+        userService.updateAccessLevel(id, "BANNED");
         return "redirect:/admin/users";
     }
 
     @GetMapping( "/users/unblock/{id}")
     public String unblockUser(@PathVariable("id") long id) {
-        userService.updateAccessLevel(id, "user");
+        userService.updateAccessLevel(id, "USER");
         return "redirect:/admin/users";
     }
 

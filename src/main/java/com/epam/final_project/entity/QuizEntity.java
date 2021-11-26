@@ -1,47 +1,45 @@
 package com.epam.final_project.entity;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 
-@Entity
-@Table(name = "quiz", uniqueConstraints = {@UniqueConstraint(columnNames = {"id"})})
 @Getter
 @Setter
 @NoArgsConstructor
-@AllArgsConstructor
+@Entity
+@Table(name = "quizzes")
 public class QuizEntity implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(nullable = false)
     private String name;
 
+    @Column(nullable = false)
     private Integer time;
 
-    private String difficulty;
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "difficulty_id")
+    private DifficultyEntity difficulty;
 
-    private String subject;
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "category_id")
+    private CategoryEntity category;
 
     @OneToMany(mappedBy = "quiz", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    @Column(nullable = true)
     @JsonManagedReference
     private List<UsersQuizzesEntity> userQuizzes;
 
     @OneToMany(mappedBy = "quizId")
     private List<QuestionEntity> questions;
-
-    public static QuizEntity createQuizEntity(String name, Integer time, String subject, String difficulty) {
-        QuizEntity quiz = new QuizEntity();
-        quiz.setName(name);
-        quiz.setTime(time);
-        quiz.setSubject(subject);
-        quiz.setDifficulty(difficulty);
-        return quiz;
-    }
 
 }

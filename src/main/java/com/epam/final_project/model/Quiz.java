@@ -21,9 +21,9 @@ public class Quiz {
     @NotNull(message = "Difficulty should not be empty")
     private String difficulty;
 
-    @NotNull(message = "Subject should not be empty")
+    @NotNull(message = "Category should not be empty")
     @Size(min = 2, max = 30, message = "Subject should be between 2 and 30 characters")
-    private String subject;
+    private String category;
 
     public static Quiz createQuiz(Long id, String name, int time, String difficulty, String subject) {
         Quiz quiz = new Quiz();
@@ -31,7 +31,7 @@ public class Quiz {
         quiz.setName(name);
         quiz.setTime(time);
         quiz.setDifficulty(difficulty);
-        quiz.setSubject(subject);
+        quiz.setCategory(subject);
         return quiz;
     }
 

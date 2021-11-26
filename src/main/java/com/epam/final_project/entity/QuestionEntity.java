@@ -10,7 +10,7 @@ import java.io.Serializable;
 import java.util.List;
 
 @Entity
-@Table(name = "question")
+@Table(name = "questions")
 @Setter
 @Getter
 @NoArgsConstructor
@@ -23,10 +23,10 @@ public class QuestionEntity implements Serializable {
 
     private String prompt;
 
-    @OneToMany(mappedBy = "question")
+    @OneToMany(mappedBy = "question", cascade = CascadeType.ALL)
     private List<AnswerEntity> answers;
 
-    @OneToMany(mappedBy = "question")
+    @OneToMany(mappedBy = "question", cascade = CascadeType.ALL)
     private List<VariantEntity> variants;
 
     @ManyToOne

@@ -1,7 +1,11 @@
 package com.epam.final_project.service;
 
+import com.epam.final_project.entity.CategoryEntity;
+import com.epam.final_project.entity.DifficultyEntity;
 import com.epam.final_project.entity.QuizEntity;
 import com.epam.final_project.model.Quiz;
+import com.epam.final_project.repository.CategoryRepository;
+import com.epam.final_project.repository.DifficultyRepository;
 import com.epam.final_project.repository.QuizRepository;
 import javassist.NotFoundException;
 import lombok.extern.slf4j.Slf4j;
@@ -19,7 +23,13 @@ public class QuizService {
 
     private final QuizRepository quizRepository;
 
+    private final DifficultyRepository difficultyRepository;
+
+    private final CategoryRepository categoryRepository;
+
     private final UsersQuizzesService usersQuizzesService;
+
+    private final CategoryService categoryService;
 
     public QuizEntity save(QuizEntity quiz) {
         return quizRepository.save(quiz);
@@ -29,9 +39,14 @@ public class QuizService {
         return quizRepository.findAll();
     }
 
-    public QuizService(QuizRepository quizRepository, UsersQuizzesService usersQuizzesService) {
+    public QuizService(QuizRepository quizRepository, DifficultyRepository difficultyRepository,
+                       CategoryRepository categoryRepository, UsersQuizzesService usersQuizzesService,
+                       CategoryService categoryService) {
         this.quizRepository = quizRepository;
+        this.difficultyRepository = difficultyRepository;
+        this.categoryRepository = categoryRepository;
         this.usersQuizzesService = usersQuizzesService;
+        this.categoryService = categoryService;
     }
 
     public List<QuizEntity> getFirstFour() {
@@ -50,12 +65,8 @@ public class QuizService {
         return quizRepository.findById(id).orElseThrow(() -> new NotFoundException("Can not to get quiz"));
     }
 
-    public List<String> getSubjects() {
-        return quizRepository.findSubjects();
-    }
-
     public List<QuizEntity> getBySubject(String subject) {
-        return quizRepository.findAllBySubject(subject);
+        return quizRepository.findAllByCategoryName(subject);
     }
 
     public List<QuizEntity> getAllOrderByName() {
@@ -80,7 +91,7 @@ public class QuizService {
 
     public void showAllQuizzes(String sortBy, Model model) {
         List<QuizEntity> quizzes;
-        List<String> subjects = getSubjects();
+        List<CategoryEntity> categories = categoryService.getAll();
         if (sortBy.equalsIgnoreCase("name")) {
             quizzes = getAllOrderByName();
         } else if (sortBy.equalsIgnoreCase("difficulty")) {
@@ -91,7 +102,7 @@ public class QuizService {
             quizzes = getBySubject(sortBy);
         }
         model.addAttribute("sortBy", sortBy);
-        model.addAttribute("subjects", subjects);
+        model.addAttribute("categories", categories);
         model.addAttribute("quizzes", quizzes);
     }
 
@@ -109,9 +120,6 @@ public class QuizService {
     private void setCurrentPage(Model model, int currentPage) throws NotFoundException {
         final int NUMBER_QUIZZES_ON_PAGE = 5;
         Page<QuizEntity> all = quizRepository.findAll(PageRequest.of(currentPage - 1, NUMBER_QUIZZES_ON_PAGE));
-        if (!all.hasContent()) {
-            throw new NotFoundException("Can not to get user by range");
-        }
         model.addAttribute("quizPage", all);
     }
 
@@ -120,7 +128,7 @@ public class QuizService {
             QuizEntity entity = get(id);
             model.addAttribute("quiz",
                     Quiz.createQuiz(entity.getId(), entity.getName(), entity.getTime(),
-                            entity.getDifficulty(), entity.getSubject()));
+                            entity.getDifficulty().getName(), entity.getCategory().getName()));
             return "/admin/edit-quiz";
         } catch (NotFoundException e) {
             log.error(e.getMessage());
@@ -132,10 +140,24 @@ public class QuizService {
         QuizEntity quizEntity = new QuizEntity();
         quizEntity.setName(quiz.getName());
         quizEntity.setTime(quiz.getTime());
-        quizEntity.setDifficulty(quiz.getDifficulty());
-        quizEntity.setSubject(quiz.getSubject());
+        quizEntity.setDifficulty(getDifficulty(quiz));
+        quizEntity.setCategory(getCategory(quiz));
         save(quizEntity);
         return "redirect:/admin/quizzes";
+    }
+
+    private DifficultyEntity getDifficulty(Quiz quiz) {
+        if (!difficultyRepository.existsByName(quiz.getDifficulty())) {
+            return DifficultyEntity.valueOf(quiz.getDifficulty());
+        }
+        return difficultyRepository.findByName(quiz.getDifficulty());
+    }
+
+    private CategoryEntity getCategory(Quiz quiz) {
+        if (!categoryRepository.existsByName(quiz.getCategory())) {
+            return CategoryEntity.valueOf(quiz.getCategory());
+        }
+        return categoryRepository.findByName(quiz.getCategory());
     }
 
     public String edit(Quiz quiz, long id) {
@@ -156,10 +178,10 @@ public class QuizService {
             newQuiz.setName(quiz.getName());
         }
         if (!quiz.getDifficulty().isEmpty()) {
-            newQuiz.setDifficulty(quiz.getDifficulty());
+            newQuiz.setDifficulty(getDifficulty(quiz));
         }
-        if (!quiz.getSubject().isEmpty()) {
-            newQuiz.setSubject(quiz.getSubject());
+        if (!quiz.getCategory().isEmpty()) {
+            newQuiz.setCategory(getCategory(quiz));
         }
         if (quiz.getTime() > 0) {
             newQuiz.setTime(quiz.getTime());

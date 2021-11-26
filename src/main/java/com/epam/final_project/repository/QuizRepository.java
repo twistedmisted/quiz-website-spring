@@ -21,21 +21,18 @@ public interface QuizRepository extends CrudRepository<QuizEntity, Long> {
 
     List<QuizEntity> findAllByOrderByIdDesc();
 
-    List<QuizEntity> findAllBySubject(String subject);
+    List<QuizEntity> findAllByCategoryName(String category);
 
     List<QuizEntity> findAllByOrderByName();
 
     Page<QuizEntity> findAll(Pageable pageable);
 
-    @Query(value = "SELECT quiz.* FROM quiz, questions_quiz " +
-            "WHERE quiz.id=questions_quiz.quiz_id " +
-            "GROUP BY questions_quiz.quiz_id " +
-            "ORDER BY COUNT(questions_quiz.quiz_id)",
+    @Query(value = "SELECT quizzes.* FROM quizzes, questions " +
+            "WHERE quizzes.id=questions.quiz_id " +
+            "GROUP BY questions.quiz_id " +
+            "ORDER BY COUNT(questions.quiz_id)",
             nativeQuery = true)
     List<QuizEntity> findAllSortedByQuestions();
-
-    @Query(value = "SELECT DISTINCT subject FROM quiz", nativeQuery = true)
-    List<String> findSubjects();
 
     void deleteById(long id);
 

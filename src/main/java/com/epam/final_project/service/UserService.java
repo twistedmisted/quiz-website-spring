@@ -1,8 +1,11 @@
 package com.epam.final_project.service;
 
+import com.epam.final_project.entity.RoleEntity;
 import com.epam.final_project.entity.UserEntity;
 import com.epam.final_project.model.RegistrationRequest;
+import com.epam.final_project.model.RoleType;
 import com.epam.final_project.model.User;
+import com.epam.final_project.repository.RoleRepository;
 import com.epam.final_project.repository.UserRepository;
 import javassist.NotFoundException;
 import lombok.extern.slf4j.Slf4j;
@@ -22,6 +25,8 @@ public class UserService {
 
     private final UserRepository userRepository;
 
+    private final RoleRepository roleRepository;
+
     private final QuizService quizService;
 
     private final UsersQuizzesService usersQuizzesService;
@@ -33,8 +38,17 @@ public class UserService {
         }
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
         String password = encoder.encode(request.getPassword());
-        save(UserEntity.createUserEntity(request.getEmail(), request.getLogin(), password));
+        save(createNewUser(request, password));
         return "login";
+    }
+
+    private UserEntity createNewUser(RegistrationRequest request, String password) {
+        UserEntity userEntity = new UserEntity();
+        userEntity.setEmail(request.getEmail());
+        userEntity.setLogin(request.getLogin());
+        userEntity.setPassword(password);
+        userEntity.addRole(RoleEntity.valueOf(RoleType.USER));
+        return userEntity;
     }
 
     private boolean userExists(String email, String login) {
@@ -45,15 +59,13 @@ public class UserService {
     }
 
     public List<UserEntity> getAll() {
-        System.out.println(userRepository.findAll());
         return userRepository.findAll();
     }
 
     public String getUser(Model model, long id) {
         try {
             UserEntity entity = get(id);
-            model.addAttribute("user",
-                    User.createUser(entity.getId(), entity.getLogin(), entity.getEmail(), entity.getAccessLevel()));
+            model.addAttribute("user", User.createUser(entity));
             return "/admin/edit-user";
         } catch (NotFoundException e) {
             log.error(e.getMessage());
@@ -102,7 +114,14 @@ public class UserService {
     }
 
     public void updateAccessLevel(long id, String state) {
-        userRepository.updateAccessLevel(id, state);
+        try {
+            RoleEntity roleEntity = roleRepository.findByUserId(id)
+                    .orElseThrow(() -> new NotFoundException("Can not to get role for user by id: " + id));
+            roleEntity.setRoleType(RoleType.valueOf(state));
+            roleRepository.save(roleEntity);
+        } catch (NotFoundException e) {
+            log.error("Can not to update access level for user by id: " + id);
+        }
     }
 
     public void showProfile(Model model, Principal principal) {
@@ -115,34 +134,43 @@ public class UserService {
         model.addAttribute("userQuizzes", usersQuizzesService.getFirstFourUserQuizzes(principal.getName()));
     }
 
-    public UserService(UserRepository userRepository, QuizService quizService, UsersQuizzesService usersQuizzesService) {
+    public UserService(UserRepository userRepository, RoleRepository roleRepository,
+                       QuizService quizService, UsersQuizzesService usersQuizzesService) {
         this.userRepository = userRepository;
+        this.roleRepository = roleRepository;
         this.quizService = quizService;
         this.usersQuizzesService = usersQuizzesService;
     }
 
     public String edit(User user, long id) {
-        UserEntity newUser = null;
+        UserEntity newUser;
         try {
             newUser = get(id);
         } catch (NotFoundException e) {
             log.error(e.getMessage());
             return "redirect:/admin/users";
         }
-        createNewUser(user, newUser);
+        try {
+            editUser(user, newUser);
+        } catch (NotFoundException e) {
+            log.error("Can not to edit user");
+        }
         save(newUser);
         return "redirect:/admin/users";
     }
 
-    private void createNewUser(User user, UserEntity newUser) {
+    private void editUser(User user, UserEntity newUser) throws NotFoundException {
         if (!user.getLogin().isEmpty()) {
             newUser.setLogin(user.getLogin());
         }
         if (!user.getEmail().isEmpty()) {
             newUser.setEmail(user.getEmail());
         }
-        if (!user.getAccessLevel().isEmpty()) {
-            newUser.setAccessLevel(user.getAccessLevel());
+        if (!user.getRole().isEmpty()) {
+            RoleEntity roleEntity = roleRepository.findByUserId(user.getId())
+                    .orElseThrow(() -> new NotFoundException("Can not to get role for user by id: " + user.getId()));
+            roleEntity.setRoleType(RoleType.valueOf(user.getRole()));
+            roleRepository.save(roleEntity);
         }
         if (!user.getLogin().isEmpty()) {
             newUser.setLogin(user.getLogin());
